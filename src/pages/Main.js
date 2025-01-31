@@ -5,7 +5,7 @@ import { CiMedicalCase } from "react-icons/ci";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { FaHome } from "react-icons/fa";
 import { MdFamilyRestroom } from "react-icons/md";
-
+import {Link} from 'react-router-dom'
 
 
 
@@ -13,10 +13,123 @@ import { MdFamilyRestroom } from "react-icons/md";
 
 function Main() {
 
+    const slides = [
+        {
+            number: "01",
+            title: "Medicare Basic Information and Next Steps ",
+            description: "Offering proactive risk assessment, legal conflict prevention, and comprehensive support in preparing and strategizing for litigation.",
+            image: "https://images.pexels.com/photos/6034413/pexels-photo-6034413.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            number: "02",
+            title: "Medicare and You Guide Book ",
+            description: "We help you communicate effectively with the public, media, and other stakeholders through strategic messaging and engagement.",
+            image: "https://images.pexels.com/photos/6034413/pexels-photo-6034413.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            number: "03",
+            title: "Massachusetts Medicaid Frequently Asked",
+            description: "From media relations to strategic messaging, we craft compelling narratives that amplify your message and build public support.",
+            image: "https://images.pexels.com/photos/6034413/pexels-photo-6034413.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            number: "04",
+            title: "Working Past 65",
+            description: "From media relations to strategic messaging, we craft compelling narratives that amplify your message and build public support.",
+            image: "https://images.pexels.com/photos/6034413/pexels-photo-6034413.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+    ];
+
+    const services = [
+        {
+            number: "01",
+            title: "Medicare Assistance",
+            description: "We guide you through the various parts of Medicare, helping you choose between Original Medicare, Medicare Advantage, Part D prescription drug plans, and supplemental coverage based on your specific health needs and budget.",
+            image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            number: "02",
+            title: "Medicaid Assistance",
+            description: "We understand that applying for Medicaid or renewing your coverage can be confusing and time-consuming. Our team is here to guide you through every step of the process, ensuring that you have the support you need to complete your application and maintain continuous coverage.",
+            image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            number: "03",
+            title: "In-Home Services Assistance",
+            description: "We help connect you with trusted providers for essential in-home services, such as adult foster care programs and Adult Day Health programs. Please note while we don't directly approve these services, our role is to refer you to reputable partners who can meet your needs.",
+            image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+        }
+    ];
+
+
+
+const valuesList = {
+    Integrity: {
+        title: "Integrity",
+        description: "We uphold the highest standards of professional ethics, ensuring every interaction and decision reflects our commitment to honesty and moral principles.",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    Transparency: {
+        title: "Transparency",
+        description: "Our foundation is built on honesty, openness, and responsibility. Ethical practices drive our actions, ensuring that trust and integrity are always at the core of our advocacy.",
+        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    Collaboration: {
+        title: "Collaboration",
+        description: "We believe in the power of working together, combining our expertise with your vision to achieve exceptional results and create lasting partnerships.",
+        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    }
+};
+
+const testimonials = [
+    {
+        quote: "Nomad Partners has been instrumental in helping us navigate complex policy challenges. Their team's expertise and dedication to our cause allowed us to successfully advocate for critical healthcare reforms. We couldn't have done it without them!",
+        author: "Guy Hawkins",
+        position: "Public Affairs Director"
+    },
+    {
+        quote: "Working with Nomad Partners transformed our advocacy strategy. Their deep understanding of policy and stakeholder engagement helped us achieve remarkable results.",
+        author: "Sarah Johnson",
+        position: "Executive Director"
+    }
+    // Add more testimonials as needed
+];
+
+const [currentIndex, setCurrentIndex] = useState(0);
+
+const nextTestimonial = () => {
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+};
+
+const prevTestimonial = () => {
+    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+};
+
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const [activeValue, setActiveValue] = useState(null);
+
+    const handleValueClick = (value) => {
+        if (activeValue === value) {
+            setActiveValue(null);
+        } else {
+            setActiveValue(value);
+        }
+    };
+
+    const nextSlide = () => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+    };
+
+    const prevSlide = () => {
+        setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    };
+
+
     return (
 
         <>
-            <div className='main-container'>
+            {/* <div className='main-container'>
 
                 <div className='main-h1-container'>
                     <div className='inner-h1-contianer'>
@@ -24,38 +137,57 @@ function Main() {
                         <p className='main-h2'>Together, We Bridge the Gaps That Matter Most—Your Health, Your Future.</p>
 
 
-                        <div className='main-btn'>
-                            <p className='btn-title'>Get Started</p>
-                        </div>
+                         <div className='main-btn'>
+                            <p className='btn-title'>Schedule Consulation</p>
+                        </div> 
                     </div>
                 </div>
 
 
                 <div className='main-img-container'>
-                    <img src={MainImg} alt='woman holding children' className='main-img' />
+                    <img src="https://images.pexels.com/photos/8439679/pexels-photo-8439679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt='woman holding children' className='main-img' />
                 </div>
 
 
+            </div> */}
+
+
+            <div className='main-container-2'>
+                <div className='main-img-container-2'>
+                    <img 
+                        src="https://images.pexels.com/photos/8439679/pexels-photo-8439679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                        alt='woman holding children' 
+                        className='main-img-2' 
+                    />
+                    <div className='overlay'>
+                        <div className='text-content'>
+                            <h1>Your Trusted Insurance Partner for Massachusetts.</h1>
+                            <p>Together, We Bridge the Gaps That Matter Most—Your Health, Your Future.</p>
+                            <button className="learn-more-btn">Learn More →</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+
+   
 
             <div className='section-2-container'>
                 <div className='section-2'>
                     <div className='inner-section-2'>
                         <div className='section-2-title'>
                             <p className='section-2-h1'>Get Started with Medicaid Assistance</p>
+                            <hr className='main-line' />
+                            {/* <p className='section-2-bold'>Offering clear, honest, and reliable insurance solutions for peace of mind.</p> */}
+                            
 
-                            <p className='section-2-bold'>Offering clear, honest, and reliable insurance solutions for peace of mind.</p>
-
-                            <div className='section-2-btn'>
-                                <p className='btn-title-sec-2'>See More Details</p>
-                            </div>
+                     
                         </div>
 
                         <div className='section-2-text'>
-                            <p className='section-2-p'>Welcome to Bridgewell Insurance Agency! We’re here to make navigating your health insurance options easier and more accessible. Whether you’re looking to apply for Medicaid, renew your coverage, explore health insurance options, or find trusted in-home care services, our team is here to guide you every step of the way. At Bridgewell, we don’t just provide insurance; we bridge the gap between where you are now and a more secure, healthier future.</p>
+                            <p className='section-2-p'>Welcome to Bridgewell Insurance Agency! We're here to make navigating your health insurance options easier and more accessible. Whether you're looking to apply for Medicaid, renew your coverage, explore health insurance options, or find trusted in-home care services, our team is here to guide you every step of the way. At Bridgewell, we don't just provide insurance; we bridge the gap between where you are now and a more secure, healthier future.</p>
 
-                            <p className='section-2-bold-p'>Hablemos Español:</p>
+                            {/* <p className='section-2-bold-p'>Hablemos Español:</p> */}
                             <p className='section-2-p'>We offer services in Spanish. Feel free to contact us and let us know how we can assist you in your preferred language.</p>
                         </div>
                     </div>
@@ -63,135 +195,170 @@ function Main() {
 
             </div>
 
-            <div className='section-4-container'>
-
-<div className='section-4'>
-    <p className='section-4-h1'>Why Choose Us?</p>
-    <p className='section-4-p'>Your Trusted Insurance Partner. Your Health, Your Future</p>
-
-    <div className='section-4-box-row'>
-
-        <div className='section-4-box'>
-
-            <div className='inner-section-4-box'>
-            <CiMedicalCase className='section-4-icon' />
-
+            <div className="medicare-container">
+            <div className="medicare-image">
+                <img 
+                    src="https://images.pexels.com/photos/6787970/pexels-photo-6787970.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                    alt="Senior couple sitting on porch" 
+                />
             </div>
-
-            <div>
-                <p className='section-4-bold'>Expert Medicaid Support</p>
-                <p className='section-4-copy'>We specialize in Medicaid applications and renewals, offering hands-on assistance to ensure you don’t face gaps in coverage.</p>
+            
+            <div className="medicare-content">
+                <h1>New to Medicare? Start here</h1>
+                <p>We specialize in helping individuals navigate the complexities of Medicare and Medicaid</p>
+                
+                <button className="get-started-btn">
+                    Get started
+                    <span className="arrow">→</span>
+                </button>
             </div>
         </div>
 
-        <div className='section-4-box'>
-
-            <div className='inner-section-4-box'>
-            <RiCustomerService2Fill  className='section-4-icon' />
-            </div>
-
-            <div>
-                <p className='section-4-bold'>Personalized Service</p>
-                <p className='section-4-copy'>Our team takes the time to understand your unique needs and provide the best health insurance options available.</p>
-            </div>
-        </div>
-
-        <div className='section-4-box'>
-
-            <div className='inner-section-4-box'>
-            <FaHome className='section-4-icon' />
-            </div>
-
-            <div>
-                <p className='section-4-bold'>In-Home Services Referrals</p>
-                <p className='section-4-copy'>We also assist with connecting you to trusted partners for in-home care services, such as adult foster care and adult day care.</p>
-            </div>
-        </div>
-
-        <div className='section-4-box'>
-
-            <div className='inner-section-4-box'>
-            <MdFamilyRestroom className='section-4-icon' />
-            </div>
-
-            <div>
-                <p className='section-4-bold'>Dedicated to Your Future</p>
-                <p className='section-4-copy'>Health insurance is about more than just today. It’s about securing your future. We help bridge the gap to a healthier tomorrow.</p>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-</div>
-
-</div>
-            <div className='section-3-container'>
-                <div className='section-3'>
-
-                    <div className='section-3-text-container'>
-
-                        <p className='section-3-h1'>Simple, transparent insurance services with no hidden surprises.</p>
-                        <p className='section-3-p'>Partnering with us provides your business expert guidance and strategic insurance solutions.</p>
-
-
-                    <div className='section-3-btn-row'>
-                        <div className='call-btn'>
-                            <p className='call-btn-text'>Schedule Time to talk</p>
-                        </div>
-
-                    
+            <p className='os-h2'>Our Services</p>
+            <p className='os-h5'>Offering clear, honest, and reliable insurance solutions for peace of mind.</p>
+            <div className="services-grid">
+            {services.map((service) => (
+                <div 
+                    key={service.number} 
+                    className="service-card"
+                    style={{
+                        backgroundImage: `linear-gradient(
+                            rgba(0, 0, 0, 0.7),
+                            rgba(0, 0, 0, 0.7)
+                        ), url(${service.image})`
+                    }}
+                >
+                    <div className="card-content">
+                        <div className="service-number">{service.number}</div>
+                        <h2>{service.title}</h2>
+                        <p>{service.description}</p>
+                        <button className="learn-more">LEARN MORE</button>
                     </div>
+                </div>
+            ))}
+        </div>
 
 
+    
+
+
+        <div className="case-study-container">
+            <div className="case-study-content">
+                <div className="logo-section">
+                    <div className="logo">
+                        <span className="circle"></span>
+                        <span className="company-name">Polymath</span>
                     </div>
-
-                    <div className='section-3-img-container'>
-                        <img src={MattImg} alt='Matt' className='matt-img' />
-                    </div>
-
                 </div>
 
+                <h1>Policy Reform in Healthcare</h1>
+
+                <div className="challenge-solution-grid">
+                    <div className="section">
+                        <h2>Challenge</h2>
+                        <p>A healthcare organization sought to influence policy changes in national healthcare regulations to improve access to critical services.</p>
+                    </div>
+
+                    <div className="section">
+                        <h2>Solution</h2>
+                        <p>Our team developed a comprehensive advocacy strategy, including stakeholder engagement, policy analysis, and direct lobbying.</p>
+                    </div>
+                </div>
+
+                <button className="read-more-btn">READ MORE</button>
             </div>
 
+            <div className="case-study-image">
+                <img 
+                    src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                    alt="Healthcare professional" 
+                />
+            </div>
+        </div>
+            
+     
+       
 
 
-            <div className='section-6-container'>
+
+            {/* <div className='section-6-container'>
 
                 <div>
                     <p className='section-6-main-h1'>Our Services</p>
                     <p className='section-6-main-p'>We specialize in helping individuals navigate the complexities of Medicare and Medicaid.</p>
-                    <p className='section-6-second-p'>Whether you’re new to these programs or need help understanding your current options, our team is here to ensure you have the right coverage.</p>
+                    <p className='section-6-second-p'>Whether you're new to these programs or need help understanding your current options, our team is here to ensure you have the right coverage.</p>
                 </div>
 
 
                 <div className='section-6-row'>
 
+
                     <div className='section-6-box'>
                         <p className='section-6-bold'>Medicare Assistance</p>
-                        <p className='section-6-copy'>We guide you through the various parts of Medicare, helping you choose between Original Medicare, Medicare Advantage, Part D prescription drug plans, and supplemental coverage based on your specific health needs and budget.</p>
+                        <p className='section-6-copy'>We guide you through the various parts of Medicare, helping you choose between Original Medicare, Medicare Advantage, Part D prescription drug plans...<Link className='read-more-link' to='/about'><strong className='read-more'>Read More</strong></Link></p>
 
                     </div>
 
+
                     <div className='section-6-box'>
                         <p className='section-6-bold'>Medicaid Assistance</p>
-                        <p className='section-6-copy'>Our team is here to guide you through every step of the process, ensuring that you have the support you need to complete your application and maintain continuous coverage.
-                        </p>
-
+                        <p className='section-6-copy'>Our team is here to guide you through every step of the process, ensuring that you have the support you need to complete your application and...<Link className='read-more-link' to='/about'><strong className='read-more'>Read More</strong></Link></p>
+                    
                     </div>
 
                     <div className='section-6-box'>
                         <p className='section-6-bold'>In-Home Services Assistance</p>
-                        <p className='section-6-copy'>We help connect you with trusted providers for essential in-home services, such as adult foster care programs and Adult Day Health programs. Our role is to refer you to reputable partners who can meet your needs.
+                        <p className='section-6-copy'>We help connect you with trusted providers for essential in-home services, such as adult foster care programs and Adult Day Health programs....<Link className='read-more-link' to='/about'><strong className='read-more'>Read More</strong></Link>
                         </p>
 
                     </div>
 
                 </div>
 
+            </div> */}
+
+            {/* <div className="slider-section">
+            <div className="slider-header">
+                <h3>+ Resource Center</h3>
+                <h1>We offer a range of strategic services.</h1>
+                <p>Comprehensive suite of services designed to help organizations navigate complex advocacy landscapes.</p>
+
+                <div className="slider-controls">
+                    <button onClick={prevSlide} className="nav-button">←</button>
+                    <button onClick={nextSlide} className="nav-button">→</button>
+                </div>
+            
             </div>
+
+            <div className="slider-container">
+                <div 
+                    className="slides"
+                    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                >
+                 {slides.map((slide, index) => (
+    <div 
+        key={index} 
+        className="slide"
+        style={{
+            backgroundImage: `linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+            ), url(${slide.image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+        }}
+    >
+        <div className="slide-number">{slide.number}</div>
+        <h2>{slide.title}</h2>
+        <p>{slide.description}</p>
+        <button className="learn-more">LEARN MORE</button>
+    </div>
+))}
+                </div>
+
+                
+            </div>
+        </div> */}
 
 
             <footer className='footer-container'>
@@ -225,7 +392,7 @@ function Main() {
                     </div>
                 </div>
                 <div className='footer-bottom'>
-                    <p>&copy; {new Date().getFullYear()} Bridgewell Insurance Agency. All rights reserved.</p>
+                    <p className='copyright'>&copy; {new Date().getFullYear()} Bridgewell Insurance Agency. All rights reserved.</p>
                 </div>
             </footer>
 

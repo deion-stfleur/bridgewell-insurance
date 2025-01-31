@@ -17,18 +17,17 @@ function Navbar() {
                     <img className='logo' alt="Bridgwell Insurance Logo" src="https://iili.io/2iIvZBe.png" />
                     </Link>
                     <div className='links'>
-                        <p className='link-title'>Services</p>
-                        <p className='link-title'>Contact</p>
                         <Link className='link' to='/about'>
                         <p className='link-title'>About Us</p>
                         </Link>
+                        <p className='link-title'>Services</p>
                         <p className='link-title'>Blog</p>
                     </div>
                 </div>
 
                 <div>
                     <div className='contact-btn'>
-                        <p className='link-title-cta-text'>Contact Us</p>
+                        <p className='link-title-cta-text'>Let's Talk</p>
                     </div>
 
                     <div>
