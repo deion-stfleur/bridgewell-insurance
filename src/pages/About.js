@@ -108,27 +108,9 @@ function About() {
 
         </div>
 
-        <div className='bg-pos'>
-            <div className='bg-color'></div>
-         <img src={Banner} alt='Banner' className='banner-img' />
-        </div>
+    
 
 
-
-        <div className='about-vision'>
-
-            <div className='inner-vision'>
-            <div className='about-vision-container'>
-                <p className='about-vision-title'>Our Vision</p>
-                <p className='about-vision-p'>We are a dynamic advocacy firm dedicated to driving positive change.</p>
-            </div>
-
-            <div className='about-vision-container-2'>
-                <p className='about-vision-h2'>We're more than just an insurance agency. We're a trusted partner, dedicated to walking you through the complex world of health insurance and helping you secure the care and services you need for a better tomorrow.</p>
-            </div>
-            </div>
-            
-        </div>
 
       
 
