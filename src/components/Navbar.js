@@ -22,6 +22,9 @@ function Navbar() {
                         </Link>
                         <p className='link-title'>Services</p>
                         <p className='link-title'>Blog</p>
+                        
+                   
+
                     </div>
                 </div>
 
@@ -41,10 +44,14 @@ function Navbar() {
             </nav>
             <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
                 <p className='link-title'>Services</p>
-                <p className='link-title'>Contact</p>
+                <Link className='link' to='/about'>
                 <p className='link-title'>About Us</p>
+                </Link>
                 <p className='link-title'>Blog</p>
                 <p className='link-title'>Contact Us</p>
+                <div onClick={toggleMenu}>
+                        <p className='link-title'>Close</p>
+                        </div>
             </div>
         </div>
     )

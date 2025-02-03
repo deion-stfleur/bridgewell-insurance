@@ -6,6 +6,7 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import { FaHome } from "react-icons/fa";
 import { MdFamilyRestroom } from "react-icons/md";
 import {Link} from 'react-router-dom'
+import "../index.css"
 
 
 
@@ -239,43 +240,30 @@ const prevTestimonial = () => {
         </div>
 
 
-    
+        <div className="who-section">
+            <div className="who-container">
+                <div className="image-section">
+                    <img 
+                        src="https://images.pexels.com/photos/6667797/pexels-photo-6667797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                        alt="Professional with laptop" 
+                    />
+                </div>
+                
+                <div className="text-section">
 
-
-        <div className="case-study-container">
-            <div className="case-study-content">
-                <div className="logo-section">
-                    <div className="logo">
-                        <span className="circle"></span>
-                        <span className="company-name">Polymath</span>
+                    <div className='inner-text-section'>
+                    <h1>Who we are</h1>
+                    <p>
+                        We are a team of experienced digital consultants dedicated to helping 
+                        businesses thrive in the digital era. From strategy to execution, we deliver 
+                        solutions tailored to your unique needs.
+                    </p>
+                    <button className="about-us-btn">About us</button>
                     </div>
                 </div>
-
-                <h1>Policy Reform in Healthcare</h1>
-
-                <div className="challenge-solution-grid">
-                    <div className="section">
-                        <h2>Challenge</h2>
-                        <p>A healthcare organization sought to influence policy changes in national healthcare regulations to improve access to critical services.</p>
-                    </div>
-
-                    <div className="section">
-                        <h2>Solution</h2>
-                        <p>Our team developed a comprehensive advocacy strategy, including stakeholder engagement, policy analysis, and direct lobbying.</p>
-                    </div>
-                </div>
-
-                <button className="read-more-btn">READ MORE</button>
-            </div>
-
-            <div className="case-study-image">
-                <img 
-                    src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-                    alt="Healthcare professional" 
-                />
             </div>
         </div>
-            
+
      
        
 
