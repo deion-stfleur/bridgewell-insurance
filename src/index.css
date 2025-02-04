@@ -14,6 +14,7 @@ code {
 .who-section {
   padding: 2rem;
   background-color: #fff;
+  margin-bottom: 90px;
 }
 
 .who-container {
@@ -64,7 +65,7 @@ code {
 
 .about-us-btn {
   background-color: #5174ff;
-  color: #000;
+  color: white;
   border: none;
   padding: 1rem 2.5rem;
   border-radius: 100px;
@@ -82,7 +83,6 @@ code {
 .about-container {
   padding: 4rem;
   background-color: #FAF9F6;
-  max-width: 1400px;
   margin: 0 auto;
 }
 

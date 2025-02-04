@@ -21,7 +21,10 @@ function Navbar() {
                         <p className='link-title'>About Us</p>
                         </Link>
                         <p className='link-title'>Services</p>
+
+                        <Link className='link' to='/blog'>
                         <p className='link-title'>Blog</p>
+                        </Link>
                         
                    
 
@@ -47,7 +50,10 @@ function Navbar() {
                 <Link className='link' to='/about'>
                 <p className='link-title'>About Us</p>
                 </Link>
+
+                <Link to="/blog" className='link'>
                 <p className='link-title'>Blog</p>
+                </Link>
                 <p className='link-title'>Contact Us</p>
                 <div onClick={toggleMenu}>
                         <p className='link-title'>Close</p>

@@ -241,12 +241,12 @@ function About() {
         <div className="vision-mission_0">
             <div className="images-container_0">
                 <img 
-                    src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae" 
+                    src="https://images.pexels.com/photos/3824768/pexels-photo-3824768.jpeg?auto=compress&cs=tinysrgb&w=800" 
                     alt="People working with plants" 
                     className="image-left_0"
                 />
                 <img 
-                    src="https://images.unsplash.com/photo-1589923188900-85dae523342b" 
+                    src="https://images.pexels.com/photos/5708422/pexels-photo-5708422.jpeg?auto=compress&cs=tinysrgb&w=800" 
                     alt="Person planting seedlings" 
                     className="image-right_0"
                 />

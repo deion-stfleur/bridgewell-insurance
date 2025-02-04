@@ -96,6 +96,27 @@ const testimonials = [
     // Add more testimonials as needed
 ];
 
+const articles = [
+    {
+        category: "Garden Lighting",
+        date: "Aug 21, 2024",
+        title: "Medicare Basic Information and Next Steps ",
+        image: "https://images.pexels.com/photos/5708226/pexels-photo-5708226.jpeg?auto=compress&cs=tinysrgb&w=800",
+    },
+    {
+        category: "Soil Health",
+        date: "Aug 21, 2024",
+        title: "Medicare and You Guide Book 2025",
+        image: "https://images.pexels.com/photos/6414618/pexels-photo-6414618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    },
+    {
+        category: "Horticulture",
+        date: "Massachusetts Medicaid Frequently Asked.",
+        title: "Essential gardening tools every gardener should own",
+        image: "https://images.pexels.com/photos/7551645/pexels-photo-7551645.jpeg?auto=compress&cs=tinysrgb&w=800",
+    }
+];
+
 const [currentIndex, setCurrentIndex] = useState(0);
 
 const nextTestimonial = () => {
@@ -170,16 +191,51 @@ const prevTestimonial = () => {
                 </div>
             </div>
 
+            <div className="story-container_0">
+            <div className="story-image_0">
+                <img 
+                    src="https://images.pexels.com/photos/5757153/pexels-photo-5757153.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                    alt="Gardener working in greenhouse" 
+                />
+            </div>
 
+            <div className="story-content_0">
+                <div className="story-header_0">
+                    <div className="header-label_0">
+                        {/* <span className="leaf-icon_0">🌿</span> */}
+                        <span>Our Story</span>
+                    </div>
+                    <h2>The story of our commitment to gardening excellence</h2>
+                </div>
+
+                <p className="story-description_0">
+                    With a commitment to quality and sustainability, we use only the finest materials & 
+                    practices to ensure your garden thrives for years to come.
+                </p>
+
+                <ul className="story-features_0">
+                    <li>Decades of combined expertise in creating green spaces.</li>
+                    <li>Proven expertise in transforming outdoor spaces with passion.</li>
+                    <li>Seasoned professionals dedicated to perfecting garden aesthetics.</li>
+                </ul>
+        
+                <Link to="/about" className='link'>
+                <button className="more-about-btn_0">
+                    More About us
+                    <span className="arrow-icon_0">→</span>
+                </button>
+                </Link>
+            </div>
+        </div>
    
 
-            <div className='section-2-container'>
+            {/* <div className='section-2-container'>
                 <div className='section-2'>
                     <div className='inner-section-2'>
                         <div className='section-2-title'>
                             <p className='section-2-h1'>Get Started with Medicaid Assistance</p>
                             <hr className='main-line' />
-                            {/* <p className='section-2-bold'>Offering clear, honest, and reliable insurance solutions for peace of mind.</p> */}
+                            <p className='section-2-bold'>Offering clear, honest, and reliable insurance solutions for peace of mind.</p>
                             
 
                      
@@ -188,15 +244,15 @@ const prevTestimonial = () => {
                         <div className='section-2-text'>
                             <p className='section-2-p'>Welcome to Bridgewell Insurance Agency! We're here to make navigating your health insurance options easier and more accessible. Whether you're looking to apply for Medicaid, renew your coverage, explore health insurance options, or find trusted in-home care services, our team is here to guide you every step of the way. At Bridgewell, we don't just provide insurance; we bridge the gap between where you are now and a more secure, healthier future.</p>
 
-                            {/* <p className='section-2-bold-p'>Hablemos Español:</p> */}
+                            <p className='section-2-bold-p'>Hablemos Español:</p>
                             <p className='section-2-p'>We offer services in Spanish. Feel free to contact us and let us know how we can assist you in your preferred language.</p>
                         </div>
                     </div>
                 </div>
 
-            </div>
+            </div> */}
 
-            <div className="medicare-container">
+            {/* <div className="medicare-container">
             <div className="medicare-image">
                 <img 
                     src="https://images.pexels.com/photos/6787970/pexels-photo-6787970.jpeg?auto=compress&cs=tinysrgb&w=800" 
@@ -213,7 +269,7 @@ const prevTestimonial = () => {
                     <span className="arrow">→</span>
                 </button>
             </div>
-        </div>
+        </div> */}
 
             <p className='os-h2'>Our Services</p>
             <p className='os-h5'>Offering clear, honest, and reliable insurance solutions for peace of mind.</p>
@@ -348,7 +404,43 @@ const prevTestimonial = () => {
             </div>
         </div> */}
 
+<div className="articles-container_0">
+            <div className="articles-header_0">
+                <div className="header-left_0">
+                    <div className="header-label_0">
+                        {/* <span className="leaf-icon_0">🌿</span> */}
+                        {/* <span>News</span> */}
+                    </div>
+                    <h2>Latest Resources</h2>
+                </div>
+                <a href="/blogs" className="view-all_0">
+                    View All Blogs →
+                </a>
+            </div>
 
+            <div className="articles-grid_0">
+                {articles.map((article, index) => (
+                    <article key={index} className="article-card_0">
+                        <div className="article-meta_0">
+                            {/* <span className="category_0">{article.category}</span> */}
+                            {/* <span className="date-separator_0">—</span> */}
+                            {/* <span className="date_0">{article.date}</span> */}
+                        </div>
+                        
+                        <h3 className="article-title_0">{article.title}</h3>
+                        
+                        <div className="article-image_0">
+                            <img src={article.image} alt={article.title} />
+                        </div>
+                        
+                        <a href="#" className="read-more_0">
+                            Read More
+                            <span className="arrow_0">→</span>
+                        </a>
+                    </article>
+                ))}
+            </div>
+        </div>
             <footer className='footer-container'>
                 <div className='footer-content'>
                     <div className='footer-section'>
