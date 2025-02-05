@@ -413,7 +413,7 @@ const prevTestimonial = () => {
                     </div>
                     <h2>Latest Resources</h2>
                 </div>
-                <a href="/blogs" className="view-all_0">
+                <a href="/blog" className="view-all_0">
                     View All Blogs →
                 </a>
             </div>

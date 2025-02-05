@@ -9,6 +9,10 @@ function Navbar() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <div className='navbar-container'>
             <nav className='navbar'>
@@ -20,7 +24,10 @@ function Navbar() {
                         <Link className='link' to='/about'>
                         <p className='link-title'>About Us</p>
                         </Link>
+
+                        <Link className='link' to='/services'>
                         <p className='link-title'>Services</p>
+                        </Link>
 
                         <Link className='link' to='/blog'>
                         <p className='link-title'>Blog</p>
@@ -46,15 +53,18 @@ function Navbar() {
                 </div>
             </nav>
             <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
-                <p className='link-title'>Services</p>
-                <Link className='link' to='/about'>
+                <Link onClick={toggleMenu} className='link' to='/about'>
                 <p className='link-title'>About Us</p>
                 </Link>
 
-                <Link to="/blog" className='link'>
+                <Link onClick={toggleMenu}  className='link' to='/services'>
+                <p className='link-title'>Services</p>
+                </Link>
+
+                <Link onClick={toggleMenu}  to="/blog" className='link'>
                 <p className='link-title'>Blog</p>
                 </Link>
-                <p className='link-title'>Contact Us</p>
+        
                 <div onClick={toggleMenu}>
                         <p className='link-title'>Close</p>
                         </div>
