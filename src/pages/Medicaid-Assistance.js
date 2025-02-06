@@ -195,10 +195,7 @@ function MedicaidAssitance() {
                                 {/* <i className="fab fa-facebook"></i> */}
                                 <p className='white'>Info@bridgewellinsuranceagency.com</p>
                             </a>
-                            <a href="mailto:Info@bridgewellinsuranceagency.com" target="_blank" rel="noopener noreferrer">
-                                {/* <i className="fab fa-facebook"></i> */}
-                                <p className='white'>Fax: #978-400-4704</p>
-                            </a>
+                           
                             {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-twitter"></i>
                             </a>
