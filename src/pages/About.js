@@ -165,7 +165,7 @@ function About() {
                     <p className="description_0">
                     As a locally owned and operated agency in Massachusetts, we’re committed to providing personalized support for your health insurance needs.
                     </p>
-                    <a href="/projects" className="explore-link_0">
+                    <a href="/services" className="explore-link_0">
                         Explore Projects →
                     </a>
                 </div>
@@ -403,10 +403,11 @@ function About() {
                     <div className='footer-section'>
                         <h3>Connect With Us</h3>
                         <div className='social-links'>
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-facebook"></i>
+                            <a href="mailto:Info@bridgewellinsuranceagency.com" target="_blank" rel="noopener noreferrer">
+                                {/* <i className="fab fa-facebook"></i> */}
+                                <p className='white'>Info@bridgewellinsuranceagency.com</p>
                             </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-twitter"></i>
                             </a>
                             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
@@ -414,7 +415,7 @@ function About() {
                             </a>
                             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-instagram"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>

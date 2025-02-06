@@ -92,10 +92,11 @@ function Blog() {
                     <div className='footer-section'>
                         <h3>Connect With Us</h3>
                         <div className='social-links'>
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-facebook"></i>
+                            <a href="mailto:Info@bridgewellinsuranceagency.com" target="_blank" rel="noopener noreferrer">
+                                {/* <i className="fab fa-facebook"></i> */}
+                                <p className='white'>Info@bridgewellinsuranceagency.com</p>
                             </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-twitter"></i>
                             </a>
                             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
@@ -103,7 +104,7 @@ function Blog() {
                             </a>
                             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-instagram"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>

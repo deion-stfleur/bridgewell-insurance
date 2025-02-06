@@ -1052,6 +1052,11 @@ p {
   font-weight: bold;
 }
 
+.white {
+  color: white;
+  margin-top: unset
+}
+
 
 
 .article-card_0 {
