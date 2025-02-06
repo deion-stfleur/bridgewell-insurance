@@ -44,18 +44,21 @@ function Main() {
     const services = [
         {
             number: "01",
+            url: "/services/Medicare-Assistance",
             title: "Medicare Assistance",
             description: "We guide you through the various parts of Medicare, helping you choose between Original Medicare, Medicare Advantage, Part D prescription drug plans, and supplemental coverage based on your specific health needs and budget.",
             image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
         },
         {
             number: "02",
+            url: "/services/Medicaid-Assistance",
             title: "Medicaid Assistance",
             description: "We understand that applying for Medicaid or renewing your coverage can be confusing and time-consuming. Our team is here to guide you through every step of the process, ensuring that you have the support you need to complete your application and maintain continuous coverage.",
             image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
         },
         {
             number: "03",
+            url: "/services/In-Home-Assitance",
             title: "In-Home Services Assistance",
             description: "We help connect you with trusted providers for essential in-home services, such as adult foster care programs and Adult Day Health programs. Please note while we don't directly approve these services, our role is to refer you to reputable partners who can meet your needs.",
             image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
@@ -99,18 +102,21 @@ const testimonials = [
 const articles = [
     {
         category: "Garden Lighting",
+        url: "https://www.medicare.gov/basics/get-started-with-medicare",
         date: "Aug 21, 2024",
         title: "Medicare Basic Information and Next Steps ",
         image: "https://images.pexels.com/photos/5708226/pexels-photo-5708226.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
         category: "Soil Health",
+        url: "https://www.medicare.gov/medicare-and-you",
         date: "Aug 21, 2024",
-        title: "Medicare and You Guide Book 2025",
+        title: "Medicare and You Guide Book",
         image: "https://images.pexels.com/photos/6414618/pexels-photo-6414618.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
         category: "Horticulture",
+        url: "https://www.mass.gov/info-details/myservices-frequently-asked-questions",
         date: "Massachusetts Medicaid Frequently Asked.",
         title: "Essential gardening tools every gardener should own",
         image: "https://images.pexels.com/photos/7551645/pexels-photo-7551645.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -184,8 +190,11 @@ const prevTestimonial = () => {
                     <div className='overlay'>
                         <div className='text-content'>
                             <h1>Your Trusted Insurance Partner for Massachusetts.</h1>
-                            <p>Together, We Bridge the Gaps That Matter Most—Your Health, Your Future.</p>
+                            <p className='main0'>Together, We Bridge the Gaps That Matter Most—Your Health, Your Future.</p>
+                            
+                            <Link to="/about" className='link'>
                             <button className="learn-more-btn">Learn More →</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -272,7 +281,7 @@ const prevTestimonial = () => {
         </div> */}
 
             <p className='os-h2'>Our Services</p>
-            <p className='os-h5'>Offering clear, honest, and reliable insurance solutions for peace of mind.</p>
+            <p className='os-h7'>Offering clear, honest, and reliable insurance solutions for peace of mind.</p>
             <div className="services-grid">
             {services.map((service) => (
                 <div 
@@ -289,7 +298,10 @@ const prevTestimonial = () => {
                         <div className="service-number">{service.number}</div>
                         <h2>{service.title}</h2>
                         <p>{service.description}</p>
+
+                        <Link to={service.url} className='link'>
                         <button className="learn-more">LEARN MORE</button>
+                        </Link>
                     </div>
                 </div>
             ))}
@@ -314,7 +326,10 @@ const prevTestimonial = () => {
                         businesses thrive in the digital era. From strategy to execution, we deliver 
                         solutions tailored to your unique needs.
                     </p>
+
+                    <Link className='link' to="/about">
                     <button className="about-us-btn">About us</button>
+                    </Link>
                     </div>
                 </div>
             </div>
@@ -433,7 +448,7 @@ const prevTestimonial = () => {
                             <img src={article.image} alt={article.title} />
                         </div>
                         
-                        <a href="#" className="read-more_0">
+                        <a href={article.url} className="read-more_0">
                             Read More
                             <span className="arrow_0">→</span>
                         </a>

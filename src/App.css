@@ -172,6 +172,18 @@ margin: auto;
   font-weight: 500;
 }
 
+.os-h7{
+  text-align: center;
+  font-size: 49px;
+  line-height: 54px;
+  margin-top: unset;
+  margin-bottom: unset;
+  max-width: 858px;
+  margin: auto;
+  font-weight: 500;
+  color: black;
+}
+
 .service-card {
   position: relative;
   background-size: cover;
@@ -321,6 +333,10 @@ margin: auto;
 @media (max-width: 768px) {
   .case-study-content h1 {
       font-size: 2rem;
+  }
+
+  .navbar-container {
+    top: -12px;
   }
 
   .services-grid {
@@ -1113,9 +1129,18 @@ p {
   }
 
   .view-all_0 {
-      margin-top: 1rem;
+    margin-top: unset;
+    margin-bottom: 30px;
   }
 
+  .articles-header_0 h2 {
+    margin-top: unset;
+  }
+
+  .os-h7 {
+    font-size: 34px;
+    line-height: 42px;
+  }
   .article-title_0 {
       font-size: 1.25rem;
   }
@@ -1287,10 +1312,17 @@ p {
     .section h2 {
         font-size: 1.5rem;
     }
+
+    img.image-left_0 {
+      display: none;
+  }
+  .about-container {
+    padding: 4rem 2rem .51rem !important;
+  }
 }
 
 .os-h2 {
-  margin-top: 50px;
+  margin-top: 85px;
 }
 
   .medicare-image img {
@@ -1931,8 +1963,12 @@ p.section-5-email-btn-text {
 
 
 .ah-h5 {
+  margin-top: 40px;
   color: white;
-  margin-bottom: 8px;
+  font-size: 16px;
+  border: 1px solid;
+  padding: 5px;
+  max-width: 100px;
   text-align: center;
 }
 
@@ -2049,7 +2085,7 @@ p.section-5-email-btn-text {
   margin-top: 8px;
   font-weight: 500;
   line-height: 38px;
-  text-align: center;
+  margin-bottom: 40px;
 }
 
 .small-image-container_0 {
@@ -2608,6 +2644,13 @@ p.section-6-copy {
   }
 }
 
+.main0 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  color: white !important;
+}
+
 .info-card_0 {
   background: #FAF9F6;
   padding: 2rem;
@@ -3031,6 +3074,13 @@ p.section-6-copy {
   margin-top: 2rem;
 }
 
+.family-title {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: black
+}
+
 .nav-button {
   width: 50px;
   height: 50px;
@@ -3101,6 +3151,10 @@ p.section-6-copy {
   }
 }
 
+.copyright {
+  color: white;
+}
+
 
 
 @media (max-width: 768px) {
@@ -3112,6 +3166,7 @@ p.section-6-copy {
 
 .copyright {
  font-size: 14px; 
+ color: white;
 }
 
 .family-img-container {
@@ -3151,6 +3206,7 @@ p.family-title {
   margin: auto;
   margin-bottom: 20px;
   margin-top: unset;
+  text-decoration: underline;
 }
 
 .family-text-container {

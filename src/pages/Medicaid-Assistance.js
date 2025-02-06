@@ -8,11 +8,11 @@ function MedicaidAssitance() {
 
         {
             name: "Medicare Assistance",
-            url: "/services/Medicare-Assitance"
+            url: "/services/Medicare-Assistance"
         },
         {
             name: "Medicaid Assistance",
-            url: "/services/Medicaid-Assitance"
+            url: "/services/Medicaid-Assistance"
         },
         {
             name: "In-Home Services Assistance",

@@ -15,7 +15,7 @@ function InHome() {
         },
         {
             name: "In-Home Services Assistance",
-            url: "/services/In-Home-Assitance"
+            url: "/services/In-Home-Assistance"
         },
     ];
 
