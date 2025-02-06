@@ -3,6 +3,7 @@ import Banner from '../assets/stock1.jpg'
 import Family from '../assets/family.png'
 import MattImg from '../assets/Matt.png'
 import "../index.css"
+import {Link} from 'react-router-dom'
 
 
 
@@ -390,12 +391,12 @@ function About() {
                 <div className='footer-content'>
                     <div className='footer-section'>
                     <img className='logo' alt="Bridgwell Insurance Logo" src="https://iili.io/2iIvZBe.png" />
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/services">Services</a></li>
-                            <li><a href="/contact">Contact Us</a></li>
-                            <li><a href="/blog">Blog</a></li>
+                    <ul>
+                            <li><Link to="/" className='link'>Home</Link></li>
+                            <li><Link to="/" className='link'>About Us</Link></li>
+                            <li><Link to="/" className='link'>Services</Link></li>
+                            {/* <li><Link to="/" className='link'>Contact Us</Link></li> */}
+                            <li><Link to="/" className='link'>Blog</Link></li>
                         </ul>
                     </div>
                     <div className='footer-section'>
