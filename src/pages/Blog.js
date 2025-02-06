@@ -47,7 +47,8 @@ function Blog() {
                             {/* <span className="leaf-icon_0">🌿</span> */}
                             {/* <span>News</span> */}
                         </div>
-                        <h2>Latest Resources</h2>
+                        <p className='rc-h2'>Resource Center</p>
+                        <h2>Latest Blogs</h2>
                     </div>
                  
                 </div>

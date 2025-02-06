@@ -81,7 +81,7 @@ function InHome() {
                             <span>Services</span>
                             </Link>
                             <span>&gt;</span>
-                            <Link to="/services/In-Home-Assitance" className='services-links'>
+                            <Link to="/services/In-Home-Assistance" className='services-links'>
                             <span>In-Home Services Assistance</span>
                             </Link>
                         </div>
@@ -90,7 +90,7 @@ function InHome() {
     
                     <div className="main-image_0">
                         <img 
-                            src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae" 
+                            src="https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=800" 
                             alt="Soil enrichment service" 
                         />
                     </div>
@@ -111,8 +111,8 @@ function InHome() {
 
     
                     <div className="service-images_0">
-                        <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b" alt="Garden service 1" />
-                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b" alt="Garden service 2" />
+                        <img src="https://images.pexels.com/photos/6787956/pexels-photo-6787956.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Garden service 1" />
+                        <img src="https://images.pexels.com/photos/6787960/pexels-photo-6787960.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Garden service 2" />
                     </div>
 
                     {/* <section className="whats-included_0">

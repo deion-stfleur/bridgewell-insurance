@@ -83,7 +83,7 @@ function MedicaidAssitance() {
                         <span>Services</span>
                         </Link>
                         <span>&gt;</span>
-                        <Link to="/services/Medicaid-Assitance" className='services-links'>
+                        <Link to="/services/Medicaid-Assistance" className='services-links'>
                         <span>Medicaid Assistance</span>
                         </Link>
                     </div>
@@ -92,7 +92,7 @@ function MedicaidAssitance() {
 
                 <div className="main-image_0">
                     <img 
-                        src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae" 
+                        src="https://images.pexels.com/photos/339620/pexels-photo-339620.jpeg?auto=compress&cs=tinysrgb&w=800" 
                         alt="Soil enrichment service" 
                     />
                 </div>

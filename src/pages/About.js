@@ -256,17 +256,18 @@ function About() {
             <div className="cards-container_0">
                 <div className="info-card_0">
                     <h3>Our Vision</h3>
-                    <p>We strive to transform every garden into a personal sanctuary that reflects our clients' unique tastes.</p>
+                    <p>What sets us apart is our focus on helping individuals and families navigate Medicaid applications and renewals—ensuring that you don’t miss out on vital coverage</p>
                 </div>
 
                 <div className="info-card_0">
                     <h3>Our Mission</h3>
-                    <p>By focusing on quality, and personalized solutions, we aim to deliver outstanding results that exceed expectations.</p>
+                    <p> we understand the importance of support beyond just health insurance, which is why we also connect you with trusted partners offering in-home services like adult foster care and adult day care.</p>
                 </div>
 
                 <div className="info-card_0">
                     <h3>Plan & Goal</h3>
-                    <p>We prioritize clear communication and thorough understanding of client expectations to ensure that every element.</p>
+                    <p>We’re a trusted partner, dedicated to walking you through the complex world of health insurance and helping you secure the care and services you need for a better tomorrow.
+                    </p>
                 </div>
             </div>
         </div>
