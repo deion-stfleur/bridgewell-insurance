@@ -46,6 +46,11 @@ function Contact() {
         </div>
 
         <div className='ct-container animate fadeIn'>
+        <div className='contact-card'>
+                 <FaSquarePhone className='contact-icon' />
+                <p className='contact-p'>Phone Number</p>
+                <p className='contact-copy'>978-230-6080</p>
+            </div>
             <div className='contact-card'>
                 <MdEmail className='contact-icon' />
                 <p className='contact-p'>Email</p>
@@ -58,11 +63,7 @@ function Contact() {
                 <p className='contact-copy'>978-400-4704</p>
             </div>
 
-            <div className='contact-card'>
-                 <FaSquarePhone className='contact-icon' />
-                <p className='contact-p'>Phone Number</p>
-                <p className='contact-copy'>508-826-8844</p>
-            </div>
+           
         </div>
 
         <div className='bottom-contact-container'>
