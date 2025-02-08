@@ -20,7 +20,7 @@ function Blog() {
         {
             category: "Horticulture",
             date: "Massachusetts Medicaid Frequently Asked.",
-            title: "Essential gardening tools every gardener should own",
+            title: "Massachusetts Medicaid Frequently Asked.",
             image: "https://images.pexels.com/photos/7551645/pexels-photo-7551645.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
