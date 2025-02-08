@@ -222,6 +222,7 @@ const prevTestimonial = () => {
                 <p className="story-description_0">
                 I'm Matthew, your licensed Medicare advisor, and at Bridgewell Insurance, we specialize in helping you bridge the gaps that matter most-your health and your future.
                 </p>
+                <p className="story-description_0">Navigating the world of Medicare can be overwhelming, but you don't have to do it alone. I'm here to guide you through every step, making sure you understand your options and find the plan that best fits your unique needs. Whether you're new to Medicare or looking to make changes, we're committed to helping you make informed decisions for a healthier, more secure future.</p>
 
                 {/* <ul className="story-features_0">
                     <li>Decades of combined expertise in creating green spaces.</li>
