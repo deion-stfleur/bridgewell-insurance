@@ -220,7 +220,7 @@ const prevTestimonial = () => {
                 </div>
 
                 <p className="story-description_0">
-                We’re here to make navigating your health insurance options easier and more accessible. Whether you’re looking to apply for Medicaid, renew your coverage, explore health insurance options, or find trusted in-home care services, our team is here to guide you every step of the way. At Bridgewell, we don’t just provide insurance; we bridge the gap between where you are now and a more secure, healthier future.
+                I'm Matthew, your licensed Medicare advisor, and at Bridgewell Insurance, we specialize in helping you bridge the gaps that matter most-your health and your future.
                 </p>
 
                 {/* <ul className="story-features_0">
