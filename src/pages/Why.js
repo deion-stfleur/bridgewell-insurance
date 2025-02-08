@@ -69,7 +69,7 @@ function Why() {
             </div>
         </div>
 
-           <div className="who-section">
+           {/* <div className="who-section">
             <div className="who-container">
                 <div className="image-section">
                     <img 
@@ -92,7 +92,7 @@ function Why() {
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>  */}
 
         <Footer />
    
