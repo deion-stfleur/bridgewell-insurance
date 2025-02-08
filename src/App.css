@@ -3451,10 +3451,10 @@ p.section-6-copy {
 }
 
 .story-image_0 img {
-  width: 100%;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
-  object-position: 0% 30%;
+  object-position: 0 24%;
+  width: 100%
 }
 
 .story-content_0 {

@@ -165,9 +165,9 @@ function About() {
 
             <div className="left-content_0">
                 <div className="text-container_0">
-                <p className="tc_01">Fostering Confidence, Securing Tomorrow</p>
+                <p className="tc_01">Standing Guard Over What Matters Most—Your Health, Your Future.</p>
                     <p className="description_0">
-                    As a locally owned and operated agency in Massachusetts, we’re committed to providing personalized support for your health insurance needs.
+                    As a locally owned and operated agency in Massachusetts, we’re committed to providing personalized support for your health insurance needs. What sets us apart is our focus on helping individuals and families navigate Medicaid applications and renewals—ensuring that you don’t miss out on vital coverage
                     </p>
                     <a href="/services" className="explore-link_0">
                         Explore Services →
