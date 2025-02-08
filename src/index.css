@@ -12,9 +12,12 @@ code {
     monospace;
 }
 .who-section {
-  padding: 2rem;
+  /* padding: 2rem; */
   background-color: #fff;
-  margin-bottom: 90px;
+  margin-bottom: 90px !important;
+  margin-top: 90px !important;
+  width: 90%;
+  margin: auto;
 }
 
 .who-container {

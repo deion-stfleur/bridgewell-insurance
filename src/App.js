@@ -10,6 +10,10 @@ import MedicareAssistance from './pages/Medicare-Assistance';
 import MedicaidAssitance from './pages/Medicaid-Assistance';
 import InHome from './pages/In-Home'
 import ScrollToTop from './components/ScrollToTop';
+import FAQ from './pages/FAQ';
+import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Why from './pages/Why';
 
 
 function App() {
@@ -26,6 +30,10 @@ function App() {
         <Route path="/services/Medicare-Assistance" element={<MedicareAssistance />} />
         <Route path="/services/Medicaid-Assistance" element={<MedicaidAssitance />} />
         <Route path="/services/In-Home-Assitance" element={<InHome />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/why-choose-us" element={<Why />} />
       </Routes>
     </Router>
 

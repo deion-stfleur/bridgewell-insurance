@@ -7,6 +7,7 @@ import { FaHome } from "react-icons/fa";
 import { MdFamilyRestroom } from "react-icons/md";
 import {Link} from 'react-router-dom'
 import "../index.css"
+import Footer from '../components/Footer';
 
 
 
@@ -188,23 +189,24 @@ const prevTestimonial = () => {
                         className='main-img-2' 
                     />
                     <div className='overlay'>
-                        <div className='text-content'>
+                        <div className='text-content animate fadeInUp'>
                             <h1>Your Trusted Insurance Partner for Massachusetts.</h1>
                             <p className='main0'>Together, We Bridge the Gaps That Matter Most—Your Health, Your Future.</p>
                             
                             <Link to="/about" className='link'>
-                            <button className="learn-more-btn">Learn More →</button>
+                            <button className="learn-more-btn">About Us →</button>
                             </Link>
                         </div>
+
                     </div>
                 </div>
-            </div>
+            </div> 
 
             <div className="story-container_0">
             <div className="story-image_0">
                 <img 
-                    src="https://images.pexels.com/photos/5757153/pexels-photo-5757153.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                    alt="Gardener working in greenhouse" 
+                    src={MattImg} 
+                    alt="Meet Matt CEO of Bridgewell Insurance" 
                 />
             </div>
 
@@ -212,28 +214,22 @@ const prevTestimonial = () => {
                 <div className="story-header_0">
                     <div className="header-label_0">
                         {/* <span className="leaf-icon_0">🌿</span> */}
-                        <span>Our Story</span>
+                        <span className='hl0-h1'> Welcome to Bridgewell Insurance Agency!</span>
                     </div>
-                    <h2>The story of our commitment to gardening excellence</h2>
+                    {/* <h2>The story of our commitment to gardening excellence</h2> */}
                 </div>
 
                 <p className="story-description_0">
-                    With a commitment to quality and sustainability, we use only the finest materials & 
-                    practices to ensure your garden thrives for years to come.
+                We’re here to make navigating your health insurance options easier and more accessible. Whether you’re looking to apply for Medicaid, renew your coverage, explore health insurance options, or find trusted in-home care services, our team is here to guide you every step of the way. At Bridgewell, we don’t just provide insurance; we bridge the gap between where you are now and a more secure, healthier future.
                 </p>
 
-                <ul className="story-features_0">
+                {/* <ul className="story-features_0">
                     <li>Decades of combined expertise in creating green spaces.</li>
                     <li>Proven expertise in transforming outdoor spaces with passion.</li>
                     <li>Seasoned professionals dedicated to perfecting garden aesthetics.</li>
                 </ul>
-        
-                <Link to="/about" className='link'>
-                <button className="more-about-btn_0">
-                    More About us
-                    <span className="arrow-icon_0">→</span>
-                </button>
-                </Link>
+         */}
+               
             </div>
         </div>
    
@@ -280,13 +276,13 @@ const prevTestimonial = () => {
             </div>
         </div> */}
 
-            <p className='os-h2'>Our Services</p>
-            <p className='os-h7'>Offering clear, honest, and reliable insurance solutions for peace of mind.</p>
+            <p className='os-h2'>Our Services at a Glance</p>
+            <p className='os-h7'>Offering clear, honest, and reliable insurance solutions for your peace of mind.</p>
             <div className="services-grid">
             {services.map((service) => (
                 <div 
                     key={service.number} 
-                    className="service-card"
+                    className="service-card animate fadeInUp "
                     style={{
                         backgroundImage: `linear-gradient(
                             rgba(0, 0, 0, 0.7),
@@ -295,7 +291,7 @@ const prevTestimonial = () => {
                     }}
                 >
                     <div className="card-content">
-                        <div className="service-number">{service.number}</div>
+                        {/* <div className="service-number">{service.number}</div> */}
                         <h2>{service.title}</h2>
                         <p>{service.description}</p>
 
@@ -307,8 +303,64 @@ const prevTestimonial = () => {
             ))}
         </div>
 
+        <div className="values-container_0">
+            <div className="values-header_0">
+                <h2>Why choose us?</h2>
+                <p>Core values of integrity, innovation, and excellence shape every solution we deliver.</p>
+            </div>
 
-        <div className="who-section">
+            <div className="values-grid_0">
+                <div className="value-card_0 ht200">
+                    <div className="icon-container_0">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12Z" fill="currentColor"/>
+                            <path d="M12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Expert Medicaid Support</h3>
+                    {/* <p>We specialize in Medicaid applications and renewals, offering hands-on assistance to ensure you don’t face gaps in coverage.</p> */}
+                </div>
+
+                <div className="value-card_0">
+                    <div className="icon-container_0">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L4 10V22H20V10L12 2Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Personalized Service</h3>
+                    {/* <p>Our team takes the time to understand your unique needs and provide the best health insurance options available.</p> */}
+                </div>
+
+                <div className="value-card_0">
+                    <div className="icon-container_0">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>In-Home Services Referrals</h3>
+                    {/* <p>We also assist with connecting you to trusted partners for in-home care services, such as adult foster care and adult day care.</p> */}
+                </div>
+
+                <div className="value-card_0">
+                    <div className="icon-container_0">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M1 21H23L12 2L1 21Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Dedicated to Your Future</h3>
+                    {/* <p>Health insurance is about more than just today. It’s about securing your future. We help bridge the gap to a healthier tomorrow.</p> */}
+                </div>
+            </div>
+
+
+            <Link className='link' to="/why-choose-us">
+            <div className='lm-us-btn'>
+                <p className='lmus-text'>Learn More →</p>
+            </div>
+            </Link>
+        </div>
+
+        {/* <div className="who-section">
             <div className="who-container">
                 <div className="image-section">
                     <img 
@@ -333,7 +385,7 @@ const prevTestimonial = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
      
        
@@ -419,79 +471,25 @@ const prevTestimonial = () => {
             </div>
         </div> */}
 
-<div className="articles-container_0">
-            <div className="articles-header_0">
-                <div className="header-left_0">
-                    <div className="header-label_0">
-                        {/* <span className="leaf-icon_0">🌿</span> */}
-                        {/* <span>News</span> */}
-                    </div>
-                    <h2>Latest Resources</h2>
-                </div>
-                <a href="/blog" className="view-all_0">
-                    View All Blogs →
-                </a>
-            </div>
+<div className="hero-section">
+  <img
+    src="https://images.pexels.com/photos/8439679/pexels-photo-8439679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+    alt="Team collaboration" 
+    className="hero-image"
+  />
+  <div className="hero-overlay"></div>
+  <div className="hero-content">
+    <h1>Protecting what matters, empowering your future.</h1>
 
-            <div className="articles-grid_0">
-                {articles.map((article, index) => (
-                    <article key={index} className="article-card_0">
-                        <div className="article-meta_0">
-                            {/* <span className="category_0">{article.category}</span> */}
-                            {/* <span className="date-separator_0">—</span> */}
-                            {/* <span className="date_0">{article.date}</span> */}
-                        </div>
-                        
-                        <h3 className="article-title_0">{article.title}</h3>
-                        
-                        <div className="article-image_0">
-                            <img src={article.image} alt={article.title} />
-                        </div>
-                        
-                        <a href={article.url} className="read-more_0">
-                            Read More
-                            <span className="arrow_0">→</span>
-                        </a>
-                    </article>
-                ))}
-            </div>
-        </div>
-            <footer className='footer-container'>
-                <div className='footer-content'>
-                    <div className='footer-section'>
-                    <img className='logo' alt="Bridgwell Insurance Logo" src="https://iili.io/2iIvZBe.png" />
-                        <ul>
-                            <li><Link to="/" className='link'>Home</Link></li>
-                            <li><Link to="/" className='link'>About Us</Link></li>
-                            <li><Link to="/" className='link'>Services</Link></li>
-                            {/* <li><Link to="/" className='link'>Contact Us</Link></li> */}
-                            <li><Link to="/" className='link'>Blog</Link></li>
-                        </ul>
-                    </div>
-                    <div className='footer-section'>
-                        <h3>Contact Us</h3>
-                        <div className='social-links'>
-                            <a href="mailto:Info@bridgewellinsuranceagency.com" target="_blank" rel="noopener noreferrer">
-                                {/* <i className="fab fa-facebook"></i> */}
-                                <p className='white'>Info@bridgewellinsuranceagency.com</p>
-                            </a>
+    <Link className='link' to="/contact">
+    <button>Contact Now →</button>
+    </Link>
+  </div>
+</div>
 
-                            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-instagram"></i>
-                            </a> */}
-                        </div>
-                    </div>
-                </div>
-                <div className='footer-bottom'>
-                    <p className='copyright'>&copy; {new Date().getFullYear()} Bridgewell Insurance Agency. All rights reserved.</p>
-                </div>
-            </footer>
+
+<Footer />
+
 
 
 

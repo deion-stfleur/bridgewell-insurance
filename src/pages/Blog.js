@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
+import Footer from '../components/Footer';
 
 
 function Blog() {
@@ -39,7 +40,23 @@ function Blog() {
                 <p className="about-p">As a locally owned and operated agency in Massachusetts</p>
                 <p className="about-h5">We’re committed to providing personalized support for your health insurance needs</p>
             </div>
+            
         </div>
+        <div className="hero-section-ppp">
+  <img
+    src="https://images.pexels.com/photos/8439679/pexels-photo-8439679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+    alt="Team collaboration" 
+    className="hero-image"
+  />
+  <div className="hero-overlay"></div>
+  <div className="hero-content">
+    <h1>Latest Resources</h1>
+
+    <Link className='link' to="/contact">
+    <button>Read Below →</button>
+    </Link>
+  </div>
+</div>
             <div className="articles-container_0">
                 <div className="articles-header_0">
                     <div className="header-left_0">
@@ -47,14 +64,16 @@ function Blog() {
                             {/* <span className="leaf-icon_0">🌿</span> */}
                             {/* <span>News</span> */}
                         </div>
-                        <p className='rc-h2'>Resource Center</p>
-                        <h2>Latest Blogs</h2>
+                        {/* <p className='rc-h2'>Resource Center</p> */}
+                        <h2 style={{fontSize: "2.5rem", marginTop: "4rem"}}>Recent Articles</h2>
                     </div>
                  
                 </div>
 
                 <div className="articles-grid_0">
                     {articles.map((article, index) => (
+
+                       <a hre={article.url}>
                         <article key={index} className="article-card_0">
                             <div className="article-meta_0">
                                 {/* <span className="category_0">{article.category}</span> */}
@@ -62,57 +81,23 @@ function Blog() {
                                 {/* <span className="date_0">{article.date}</span> */}
                             </div>
 
-                            <h3 className="article-title_0">{article.title}</h3>
-
                             <div className="article-image_0">
                                 <img src={article.image} alt={article.title} />
                             </div>
+                            <h3 className="article-title_0">{article.title}</h3>
+
 
                             <a href="#" className="read-more_0">
                                 Read More
                                 <span className="arrow_0">→</span>
                             </a>
                         </article>
+                       </a>
                     ))}
                 </div>
             </div>
 
-            <footer className='footer-container'>
-                <div className='footer-content'>
-                    <div className='footer-section'>
-                        <img className='logo' alt="Bridgwell Insurance Logo" src="https://iili.io/2iIvZBe.png" />
-                        <ul>
-                            <li><Link to="/" className='link'>Home</Link></li>
-                            <li><Link to="/" className='link'>About Us</Link></li>
-                            <li><Link to="/" className='link'>Services</Link></li>
-                            {/* <li><Link to="/" className='link'>Contact Us</Link></li> */}
-                            <li><Link to="/" className='link'>Blog</Link></li>
-                        </ul>
-                    </div>
-                    <div className='footer-section'>
-                        <h3>Connect With Us</h3>
-                        <div className='social-links'>
-                            <a href="mailto:Info@bridgewellinsuranceagency.com" target="_blank" rel="noopener noreferrer">
-                                {/* <i className="fab fa-facebook"></i> */}
-                                <p className='white'>Info@bridgewellinsuranceagency.com</p>
-                            </a>
-                            
-                            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-instagram"></i>
-                            </a> */}
-                        </div>
-                    </div>
-                </div>
-                <div className='footer-bottom'>
-                    <p className='copyright'>&copy; {new Date().getFullYear()} Bridgewell Insurance Agency. All rights reserved.</p>
-                </div>
-            </footer>
+            <Footer />
         </>
     )
 }

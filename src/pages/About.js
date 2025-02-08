@@ -4,6 +4,8 @@ import Family from '../assets/family.png'
 import MattImg from '../assets/Matt.png'
 import "../index.css"
 import {Link} from 'react-router-dom'
+import Footer from '../components/Footer';
+
 
 
 
@@ -147,11 +149,11 @@ function About() {
         <div className='about-container'>
             <div className='about-header'>
 
-                <p className='ah-h5'>Our Story</p>
-                <p className='ah-h3'>About Us</p>
+             
 
             </div>
             <div className='inner-about-container'>
+              
             <p className='about-p'>As a locally owned and operated agency in Massachusetts</p>
             <p className='about-h5'>We’re committed to providing personalized support for your health insurance needs</p>
             </div>
@@ -159,37 +161,35 @@ function About() {
         </div>
 
         <div className="about-content_0">
+
+
             <div className="left-content_0">
                 <div className="text-container_0">
-                    <h2 className="title_0">We believe that everyone deserves access to affordable healthcare and essential services.</h2>
+                <p className="tc_01">Fostering Confidence, Securing Tomorrow</p>
                     <p className="description_0">
                     As a locally owned and operated agency in Massachusetts, we’re committed to providing personalized support for your health insurance needs.
                     </p>
                     <a href="/services" className="explore-link_0">
-                        Explore Projects →
+                        Explore Services →
                     </a>
                 </div>
-                <div className="small-image-container_0">
-                    <img 
-                        src="https://images.pexels.com/photos/6939458/pexels-photo-6939458.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                        alt="Person working in greenhouse" 
-                        className="small-image_0"
-                    />
-                </div>
+             
             </div>
 
             <div className="right-content_0">
                 <img 
-                    src="https://images.pexels.com/photos/7477702/pexels-photo-7477702.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                    // src="https://images.pexels.com/photos/7477702/pexels-photo-7477702.jpeg?auto=compress&cs=tinysrgb&w=800" 
                     alt="Gardeners working with trees" 
                     className="large-image_0"
+                    src={MattImg}
                 />
             </div>
+           
         </div>
 
     
 
-
+{/* 
         <div className="values-container_0">
             <div className="values-header_0">
                 <h2>Why choose us?</h2>
@@ -238,8 +238,8 @@ function About() {
                     <p>Health insurance is about more than just today. It’s about securing your future. We help bridge the gap to a healthier tomorrow.</p>
                 </div>
             </div>
-        </div>
-        <div className="vision-mission_0">
+        </div> */}
+        {/* <div className="vision-mission_0">
             <div className="images-container_0">
                 <img 
                     src="https://images.pexels.com/photos/3824768/pexels-photo-3824768.jpeg?auto=compress&cs=tinysrgb&w=800" 
@@ -270,7 +270,53 @@ function About() {
                     </p>
                 </div>
             </div>
-        </div>
+        </div> */}
+
+<section className="features-section">
+
+<div className='inner-features-section'>
+  <div className="features-heading">
+  <img 
+                    src="https://images.pexels.com/photos/7163956/pexels-photo-7163956.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                    alt="People working with plants" 
+                    className="image-left_0"
+                />
+    <h2>What Sets Us Apart</h2>
+  </div>
+
+  <div className="features-grid">
+    <div className="feature-card">
+      <div className="feature-icon" style={{backgroundColor: '#E3F2FF'}}>
+        <i className="info-icon">i</i>
+      </div>
+      <h3>Our Visions</h3>
+      <p>We understand the importance of support beyond just health insurance, which is why we also connect you with trusted partners offering in-home services like adult foster care and adult day care.</p>
+    </div>
+
+    <div className="feature-card">
+      <div className="feature-icon" style={{backgroundColor: '#FFF9C4'}}>
+        <i className="hourglass-icon">⌛</i>
+      </div>
+      <h3>Our Mission</h3>
+      <p>Are you losing patients or revenue due to them losing/not yet having Medicaid coverage? We can help your current or prospective patients, keep or gain coverage.</p>
+    </div>
+
+    <div className="feature-card">
+      <div className="feature-icon" style={{backgroundColor: '#FFE7EB'}}>
+        <i className="percentage-icon">%</i>
+      </div>
+      <h3>Plan & Goal</h3>
+      <p>We’re a trusted partner, dedicated to walking you through the complex world of health insurance and helping you secure the care and services you need for a better tomorrow.</p>
+    </div>
+
+
+  </div>
+
+</div>
+  
+
+</section>
+
 
         <div className='family-container'>
 
@@ -352,7 +398,7 @@ function About() {
        
        </div>
 
-       <div className="faq-section_0">
+       {/* <div className="faq-section_0">
             <div className="faq-header_0">
           
                 <h2>Have any Questions?</h2>
@@ -386,44 +432,9 @@ function About() {
                     </a>
                 </div>
             </div>
-        </div>
+        </div> */}
 
-       <footer className='footer-container'>
-                <div className='footer-content'>
-                    <div className='footer-section'>
-                    <img className='logo' alt="Bridgwell Insurance Logo" src="https://iili.io/2iIvZBe.png" />
-                    <ul>
-                            <li><Link to="/" className='link'>Home</Link></li>
-                            <li><Link to="/" className='link'>About Us</Link></li>
-                            <li><Link to="/" className='link'>Services</Link></li>
-                            {/* <li><Link to="/" className='link'>Contact Us</Link></li> */}
-                            <li><Link to="/" className='link'>Blog</Link></li>
-                        </ul>
-                    </div>
-                    <div className='footer-section'>
-                        <h3>Connect With Us</h3>
-                        <div className='social-links'>
-                            <a href="mailto:Info@bridgewellinsuranceagency.com" target="_blank" rel="noopener noreferrer">
-                                {/* <i className="fab fa-facebook"></i> */}
-                                <p className='white'>Info@bridgewellinsuranceagency.com</p>
-                            </a>
-                            
-                            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-instagram"></i>
-                            </a> */}
-                        </div>
-                    </div>
-                </div>
-                <div className='footer-bottom'>
-                    <p className='copyright'>&copy; {new Date().getFullYear()} Bridgewell Insurance Agency. All rights reserved.</p>
-                </div>
-            </footer>
+        <Footer />
         </>
     );
 }

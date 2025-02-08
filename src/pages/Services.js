@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 function Services() {
 
@@ -53,12 +54,13 @@ function Services() {
         </div>
 
         <div className='os-container'>
-            <div className='os-inner-container'>
-            <p className='os-h3'>What We Do</p>
-            <p className='os-h9'>Our Services</p>
-            </div>
+            {/* <div className='os-inner-container'>
+            </div> */}
+            {/* <p className='os-h3'>What We Do</p> */}
         </div>
-
+            {/* <p className='os-h9'>Our Services</p> */}
+            <p className='os-h2_01'>Our Services</p>
+            <p className='sc_02'>We’re a trusted partner, dedicated to walking you through the complex world of health insurance and helping you secure the care and services you need for a better tomorrow.</p>
         <div className="articles-grid_0">
                     {articles.map((article, index) => (
                         <article key={index} className="article-card_0">
@@ -67,9 +69,9 @@ function Services() {
                             </div>
                            
                           
-                         <p className='article_id'>#{article.id}</p>
+                   
                             <h3 className="article-title_0">{article.title}</h3>
-                            <p className='article-copy'>{article.copy}</p>
+                            {/* <p className='article-copy'>{article.copy}</p> */}
 
                             <Link to={article.url} className='link'>
                             <div className="read-more_0">
@@ -83,42 +85,7 @@ function Services() {
                 </div>
 
 
-                <footer className='footer-container'>
-                <div className='footer-content'>
-                    <div className='footer-section'>
-                    <img className='logo' alt="Bridgwell Insurance Logo" src="https://iili.io/2iIvZBe.png" />
-                    <ul>
-                            <li><Link to="/" className='link'>Home</Link></li>
-                            <li><Link to="/" className='link'>About Us</Link></li>
-                            <li><Link to="/" className='link'>Services</Link></li>
-                            {/* <li><Link to="/" className='link'>Contact Us</Link></li> */}
-                            <li><Link to="/" className='link'>Blog</Link></li>
-                        </ul>
-                    </div>
-                    <div className='footer-section'>
-                        <h3>Connect With Us</h3>
-                        <div className='social-links'>
-                            <a href="mailto:Info@bridgewellinsuranceagency.com" target="_blank" rel="noopener noreferrer">
-                                {/* <i className="fab fa-facebook"></i> */}
-                                <p className='white'>Info@bridgewellinsuranceagency.com</p>
-                            </a>
-                         
-                            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-instagram"></i>
-                            </a> */}
-                        </div>
-                    </div>
-                </div>
-                <div className='footer-bottom'>
-                    <p className='copyright'>&copy; {new Date().getFullYear()} Bridgewell Insurance Agency. All rights reserved.</p>
-                </div>
-            </footer>
+                <Footer />
 
    
    </>
