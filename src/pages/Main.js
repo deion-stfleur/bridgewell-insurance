@@ -13,8 +13,28 @@ import Footer from '../components/Footer';
 
 
 
+
+
 function Main() {
     const [currentSlider, setCurrentSlider] = useState(0);
+
+    const [isVisible, setVisible] = React.useState(false);
+    const [isVisible2, setVisible2] = React.useState(false);
+    const domRef = React.useRef();
+  
+    React.useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          console.log(`entry`, entry, `is = ${entry.isIntersecting}`);
+          setVisible(entry.isIntersecting);
+        });
+      });
+  
+      const { current } = domRef;
+      observer.observe(current);
+  
+      return () => observer.unobserve(current);
+    }, []);
 
     const testimonialser = [
       {
@@ -246,7 +266,8 @@ const prevTestimonial = () => {
                 </div>
             </div> 
 
-            <div className="story-container_0">
+            <div className={`story-container_0 fade-in-section ${isVisible ? "is-visible" : ""}`}
+      ref={domRef}>
             <div className="story-image_0">
                 <img 
                     src={MattImg} 
@@ -327,7 +348,8 @@ const prevTestimonial = () => {
 
             <p className='os-h2'>Our Services at a Glance</p>
             <p className='os-h7'>Offering clear, honest, and reliable insurance solutions for your peace of mind.</p>
-            <div className="services-grid">
+            <div className='services-grid'
+   >
             {services.map((service) => (
                 <div 
                     key={service.number} 
@@ -367,37 +389,31 @@ const prevTestimonial = () => {
                         </svg>
                     </div>
                     <h3>Expert Medicaid Support</h3>
-                   <p>We specialize in Medicaid applications and renewals, offering hands-on <strong>Read More...</strong></p>
+                   <p>We specialize in Medicaid applications and renewals, offering hands-on <Link className='link-blue' to="/why-choose-us"><strong>Read More...</strong></Link></p>
                 </div>
 
                 <div className="value-card_0">
                     <div className="icon-container_0">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 2L4 10V22H20V10L12 2Z" fill="currentColor"/>
-                        </svg>
+                    <RiCustomerService2Fill />
                     </div>
                     <h3>Personalized Service</h3>
-                    <p>Our team takes the time to understand your unique needs and provide <strong>Read More...</strong></p>
+                    <p>Our team takes the time to understand your unique needs and provide <Link className='link-blue' to="/why-choose-us"><strong>Read More...</strong></Link></p>
                 </div>
 
                 <div className="value-card_0">
                     <div className="icon-container_0">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
-                        </svg>
+                    <FaHome />
                     </div>
                     <h3>In-Home Services Referrals</h3>
-                     <p>We also assist with connecting you to trusted partners for in-home care services <strong>Read More...</strong></p>
+                     <p>We also assist with connecting you to trusted partners for in-home care services <Link className='link-blue' to="/why-choose-us"><strong>Read More...</strong></Link></p>
                 </div>
 
                 <div className="value-card_0">
                     <div className="icon-container_0">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M1 21H23L12 2L1 21Z" fill="currentColor"/>
-                        </svg>
+                    <MdFamilyRestroom />
                     </div>
                     <h3>Dedicated to Your Future</h3>
-                    <p>Health insurance is about more than just today. It’s about securing your future. <strong>Read More...</strong></p> 
+                    <p>Health insurance is about more than just today. It’s about securing your future. <Link className='link-blue' to="/why-choose-us"><strong>Read More...</strong></Link></p> 
                 </div>
             </div>
 
@@ -525,7 +541,7 @@ const prevTestimonial = () => {
         <div className="header-left">
           {/* <span className="icon">📣</span> */}
         </div>
-        <h3>What our clinets are saying</h3>
+        <h3>What our clients are saying</h3>
       </div>
 
       <div className="testimonials-slider">

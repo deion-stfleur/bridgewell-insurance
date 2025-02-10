@@ -25,7 +25,7 @@ function Why() {
                 <p>Core values of integrity, innovation, and excellence shape every solution we deliver.</p>
             </div>
 
-            <div className="values-grid_0">
+            <div id="vgr-fix" className="values-grid_0 animate fadeIn">
                 <div className="value-card_0">
                     <div className="icon-container_0">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">

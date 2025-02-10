@@ -20,7 +20,7 @@ function Footer() {
     <div class="services_01">
       <h3 class="footer-title_01">Services</h3>
       <ul>
-        <a href="/services" class='links'>
+        <a href="/services#medicare-assistance" class='links'>
         <li>Health Insurance</li>
         </a>
         <a href="/services" class='links'>
