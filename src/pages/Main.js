@@ -14,6 +14,50 @@ import Footer from '../components/Footer';
 
 
 function Main() {
+    const [currentSlider, setCurrentSlider] = useState(0);
+
+    const testimonialser = [
+      {
+        title: "\"Bridgewell made navigating Medicare simple and stress-free!\"",
+        quote: "I was so overwhelmed by all the Medicare options out there, but the team at Bridgewell Insurance Agency took the time to explain everything in detail. Matt helped me find the right plan that fits my needs, and I feel much more confident now. Thank you for making this process so much easier!",
+        author: "Michelle M., Massachusetts",
+        location: "New Mexico, USA",
+        image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        title: "\"Personalized service that truly cares about your health and future.\"",
+        quote: "After years of feeling confused about my Medicaid healthcare coverage, I finally feel like I have the right insurance plan for me, thanks to Bridgewell. They truly listened to my concerns and found a solution that fits my budget and healthcare needs.",
+        author: "Henry T., Massachusetts",
+        location: "Georgia, USA",
+        image: "https://images.pexels.com/photos/7578806/pexels-photo-7578806.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        title: "\"Bridgewell Was a Godsend!\"",
+        quote: "After turning 65, I was completely lost when it came to applying for Medicaid. Unfortunately, I went months without coverage and was stressed about what to do. Thankfully, Bridgewell Insurance Agency stepped in and helped me get my MassHealth coverage back on track. Their team was patient, knowledgeable, and truly cared about getting me the coverage I needed. I can't thank them enough for their support and for making the process so much easier.",
+        author: "Margaret L., Massachusetts",
+        location: "Georgia, USA",
+        image: "https://images.pexels.com/photos/19471013/pexels-photo-19471013/free-photo-of-young-pharmacist-in-drugstore.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        title: "\"Bridgewell Helped Me When No One Else Would\"",
+        quote: "I was struggling to get the help I needed with my medications, and no one seemed to care or offer solutions. Then I reached out to Matt from Bridgewell Insurance Agency. They truly went above and beyond to help me resolve the issues with my prescriptions. Their team was supportive, understanding, and worked hard to find a solution when I felt like there was no hope. I’m so grateful for their assistance and the peace of mind they provided.",
+        author: "James B., Massachusetts",
+        location: "Georgia, USA",
+        image: "https://images.pexels.com/photos/19471013/pexels-photo-19471013/free-photo-of-young-pharmacist-in-drugstore.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      // Add more testimonials as needed
+    ];
+  
+    const nextSlider = () => {
+      setCurrentSlider((prev) => (prev + 1) % testimonialser.length);
+     
+     
+    };
+  
+    const prevSlider = () => {
+      setCurrentSlider((prev) => (prev - 1 + testimonialser.length) % testimonialser.length);
+     
+    };
 
     const slides = [
         {
@@ -48,7 +92,7 @@ function Main() {
             url: "/services/Medicare-Assistance",
             title: "Medicare Assistance",
             description: "We guide you through the various parts of Medicare, helping you choose between Original Medicare, Medicare Advantage, Part D prescription drug plans, and supplemental coverage based on your specific health needs and budget.",
-            image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            image: "https://images.pexels.com/photos/4226769/pexels-photo-4226769.jpeg?auto=compress&cs=tinysrgb&w=1200"
         },
         {
             number: "02",
@@ -208,6 +252,10 @@ const prevTestimonial = () => {
                     src={MattImg} 
                     alt="Meet Matt CEO of Bridgewell Insurance" 
                 />
+                <div className='name-pos animate fadeInUp'>
+                <p className='pos-h1'>Matthew Matos</p>
+                <p className='pos-h2'>Licensend Medicare Advisor</p>
+                </div>
             </div>
 
             <div className="story-content_0">
@@ -311,7 +359,7 @@ const prevTestimonial = () => {
             </div>
 
             <div className="values-grid_0">
-                <div className="value-card_0 ht200">
+                <div className="value-card_0">
                     <div className="icon-container_0">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12Z" fill="currentColor"/>
@@ -319,7 +367,7 @@ const prevTestimonial = () => {
                         </svg>
                     </div>
                     <h3>Expert Medicaid Support</h3>
-                    {/* <p>We specialize in Medicaid applications and renewals, offering hands-on assistance to ensure you don’t face gaps in coverage.</p> */}
+                   <p>We specialize in Medicaid applications and renewals, offering hands-on <strong>Read More...</strong></p>
                 </div>
 
                 <div className="value-card_0">
@@ -329,7 +377,7 @@ const prevTestimonial = () => {
                         </svg>
                     </div>
                     <h3>Personalized Service</h3>
-                    {/* <p>Our team takes the time to understand your unique needs and provide the best health insurance options available.</p> */}
+                    <p>Our team takes the time to understand your unique needs and provide <strong>Read More...</strong></p>
                 </div>
 
                 <div className="value-card_0">
@@ -339,7 +387,7 @@ const prevTestimonial = () => {
                         </svg>
                     </div>
                     <h3>In-Home Services Referrals</h3>
-                    {/* <p>We also assist with connecting you to trusted partners for in-home care services, such as adult foster care and adult day care.</p> */}
+                     <p>We also assist with connecting you to trusted partners for in-home care services <strong>Read More...</strong></p>
                 </div>
 
                 <div className="value-card_0">
@@ -349,16 +397,16 @@ const prevTestimonial = () => {
                         </svg>
                     </div>
                     <h3>Dedicated to Your Future</h3>
-                    {/* <p>Health insurance is about more than just today. It’s about securing your future. We help bridge the gap to a healthier tomorrow.</p> */}
+                    <p>Health insurance is about more than just today. It’s about securing your future. <strong>Read More...</strong></p> 
                 </div>
             </div>
 
 
-            <Link className='link' to="/why-choose-us">
+            {/* <Link className='link' to="/why-choose-us">
             <div className='lm-us-btn'>
                 <p className='lmus-text'>Learn More →</p>
             </div>
-            </Link>
+            </Link> */}
         </div>
 
         {/* <div className="who-section">
@@ -471,6 +519,55 @@ const prevTestimonial = () => {
                 
             </div>
         </div> */}
+
+<section className="testimonials">
+      <div className="testimonials-header">
+        <div className="header-left">
+          {/* <span className="icon">📣</span> */}
+        </div>
+        <h3>What our clinets are saying</h3>
+      </div>
+
+      <div className="testimonials-slider">
+        <div className="testimonials-track" style={{
+          transform: `translateX(-${currentSlider * 25}%)`,
+        }}>
+          {testimonialser.map((testimonial, index) => (
+            <div key={index} className="testimonial-card">
+           
+              <div className="testimonial-content">
+
+                <div className='tc-inner'>
+                <h4>{testimonial.title}</h4>
+                <p className="quote">{testimonial.quote}</p>
+                <div className="author-info">
+                  <p className="author">{testimonial.author}</p>
+                  {/* <p className="location">{testimonial.location}</p> */}
+                </div>
+            </div> 
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="slider-controls">
+        <button 
+          className="control-button" 
+          onClick={prevSlider}
+          aria-label="Previous testimonial"
+        >
+          ←
+        </button>
+        <button 
+          className="control-button" 
+          onClick={nextSlider}
+          aria-label="Next testimonial"
+        >
+          →
+        </button>
+      </div>
+    </section>
 
 <div className="hero-section">
   <img

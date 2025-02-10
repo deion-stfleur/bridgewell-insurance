@@ -14,6 +14,7 @@ import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Why from './pages/Why';
+import Events from './pages/Events';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/why-choose-us" element={<Why />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
     </Router>
 

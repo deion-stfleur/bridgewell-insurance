@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaFacebook } from "react-icons/fa6";
+
 
 function Footer() {
   return (
@@ -18,8 +20,12 @@ function Footer() {
     <div class="services_01">
       <h3 class="footer-title_01">Services</h3>
       <ul>
+        <a href="/services" class='links'>
         <li>Health Insurance</li>
+        </a>
+        <a href="/services" class='links'>
         <li>Medicaid Support</li>
+        </a>
       </ul>
     </div>
     <div class="quick-links_01">
@@ -55,6 +61,9 @@ function Footer() {
   <div class="footer-bottom_01">
     <div class="footer-logo_01">
       <img src="https://iili.io/2iIvZBe.png" alt="Bridgewell Insurance Agency Logo" />
+     <Link to="https://www.facebook.com/profile.php?id=61573094572375&mibextid=wwXIfr&rdid=GmXGxZvoPJwM4AIJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1648BsGHU6%2F%3Fmibextid%3DwwXIfr#" className='link-white'>
+      <FaFacebook />
+     </Link>
       <p className='copy_01'>&copy; 2025 | Bridgewell Insurance Agency, LLC | All Rights Reserved</p>
       {/* <p>Website by Melcs Creative Designs</p> */}
     </div>

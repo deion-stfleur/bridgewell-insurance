@@ -9,6 +9,11 @@
     margin-bottom: 4rem;
 }
 
+.testimonials {
+    padding-top: 70px;
+}
+
+
 .header-top {
     display: flex;
     align-items: center;

@@ -69,7 +69,7 @@ function Contact() {
         <div className='bottom-contact-container'>
 
             <div className='contact-img-left'>
-                <img src={MattImg} className='contact-img' />
+                <img src="https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1200" className='contact-img' />
             </div>
 
             <div className='contact-img-right'>
@@ -78,7 +78,7 @@ function Contact() {
                 
                 <Link className='link' to='/faq'>
                 <div>
-                    <p>See More</p>
+                    <p>See More →</p>
                 </div>
                 </Link>
             </div>

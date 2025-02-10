@@ -19,7 +19,7 @@ function Why() {
 
         </div>
 
-        <div className="values-container_0">
+        <div id="values" className="values-container_0">
             <div className="values-header_0">
                 <h2>Why choose us?</h2>
                 <p>Core values of integrity, innovation, and excellence shape every solution we deliver.</p>

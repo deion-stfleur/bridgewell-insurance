@@ -34,10 +34,197 @@
 
 .link-title-cta-text {
   color: white;
-margin: 15px;
-margin-top: unset;
-margin-bottom: unset;
+  margin: 7px;
+  margin-top: unset;
+  margin-bottom: unset;
+  font-size: 12px;
+}
 
+.links {
+  color: white;
+  text-decoration: none;
+}
+
+.testimonials {
+  padding: 0rem 4rem;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 80px;
+  margin-top: 150px;
+}
+
+.testimonials-header h2 {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.testimonials-header h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: unset;
+  margin-bottom: unset;
+}
+
+.testimonials-slider {
+  overflow: visible; /* Changed from hidden to show next slide */
+  position: relative;
+  padding: 1rem;
+}
+
+.testimonials-track {
+  display: flex;
+  gap: 2rem; /* Add gap between slides */
+  transition: transform 0.5s ease;
+}
+
+.tc-inner {
+  padding: 0rem 2rem;
+}
+
+.testimonial-card {
+  min-width: calc(84% - 600px);
+  display: grid;
+  gap: 2rem;
+  padding: 1rem 0rem;
+  margin-top: 20px;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: 300px; /* Reduced height */
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  display: flex;
+      flex-direction: column;
+      border: 1px solid #d1d5ff;
+      border-radius: 12px;
+      background-color: #eef0ff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-content h4 {
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #243c9b;
+}
+
+.quote {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.author-info {
+  margin-top: auto;
+}
+
+.author {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+.location {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.control-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.link-white {
+  color: white;
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.footer-logo_01 {
+  margin: auto;
+}
+
+#values {
+  margin-bottom: 100px;
+}
+
+.control-button:hover {
+  background: #f5f5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .testimonial-card {
+    min-width: calc(100% - 200px); /* Adjust card width for smaller screens */
+  }
+
+  .testimonial-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 3rem 1rem;
+  }
+
+  .testimonial-card {
+    min-width: 100%; /* Full width on mobile */
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-image {
+    height: 200px;
+  }
+
+  .testimonials-header h3 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+
+  .slider-controls {
+    position: absolute;
+    top: 2rem;
+    right: 0rem;
+    left: 40rem;
+  }
 }
 
 
@@ -47,8 +234,7 @@ margin-bottom: unset;
 }
 
 .contact-btn {
-  border: 3px solid white;
-  padding: 5px;
+  border: 2px solid white;
   margin-left: 14px;
 }
 
@@ -501,6 +687,8 @@ li {
 
 .footer-logo_01 img {
   max-width: 150px;
+  display: block;
+  margin: auto;
 }
 
 .social-media_01 {
@@ -594,6 +782,26 @@ li {
   animation-delay: 7.5s;
 }
 
+.link-black {
+  color: black;
+  text-decoration: none;
+}
+
+.animated-element {
+  opacity: 0;
+}
+
+.fadein {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translate(0, 100px);
+}
+
+.fadein.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 /*=== Animations start here  ===*/
 
 /*==== FADE IN UP ===*/
@@ -627,8 +835,15 @@ li {
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
+@media (min-width: 768px) and (max-width: 1550px) {
+#fa-fix {
+  object-position: unset !important;
+}
+}
 /*=== FADE IN DOWN ===*/
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
@@ -1039,6 +1254,7 @@ li {
 
 .copy_01 {
   color: white;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -1417,12 +1633,12 @@ p.article-copy {
 }
 
 .service-container_01 {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 300px;
   gap: 4rem;
-  width: 90%;
+  width: 90%; */
   margin: 0 auto;
-  padding: 4rem 2rem;
+  /* padding: 4rem 2rem; */
 }
 
 .service-content_0 {
@@ -1639,7 +1855,14 @@ p {
 .service-header_0 h1 {
   font-size: 3.5rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+}
+
+.service-copy_099 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4A4A4A;
+  margin-bottom: 1.5rem;
+  margin-top: unset;
 }
 
 .main-image_0 {
@@ -1656,6 +1879,7 @@ p {
 
 .about-service_0 {
   margin: 3rem 0;
+  margin-top: unset;
 }
 
 h2 {
@@ -1738,6 +1962,16 @@ p {
 .medical-h1 {
   margin-top: unset;
   margin-bottom: unset !important;
+  text-align: right;
+  padding-top: 29px;
+}
+
+.medical-h11 {
+  margin-top: unset;
+  margin-bottom: unset !important;
+  text-align: left;
+  padding-top: 29px;
+  padding-left: 2rem;
 }
 
 
@@ -3053,7 +3287,7 @@ p.section-5-email-btn-text {
   width: 100%;
   object-fit: cover;
   border-radius: 12px;
-  max-height: 635px;
+  /* max-height: 635px; */
   object-position: 0% 29%;
 }
 
@@ -3429,11 +3663,11 @@ p.section-6-copy {
 
 .story-container_0 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin: 0 auto;
-  padding: 4rem 2rem;
-  background-color: #FAF9F6;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      background-color: #FAF9F6;
 }
 
 
@@ -3448,6 +3682,7 @@ p.section-6-copy {
   border-radius: 9px;
   overflow: hidden;
   height: 480px;
+  position: relative;
 }
 
 .story-image_0 img {
@@ -3457,11 +3692,42 @@ p.section-6-copy {
   width: 100%
 }
 
+.name-pos {
+  position: absolute;
+  bottom: 9%;
+  left: 16px;
+}
+
+.pos-h1 {
+  color: white;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 500;
+  margin-bottom: unset;
+}
+
+.pos-h2 {
+  color: white;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.medical-container_012 {
+  width: 90%;
+  margin: auto;
+}
+
+.medical-container_0122 {
+  margin: auto;
+}
+
 .story-content_0 {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   gap: .5rem;
+  margin-top: -1%;
 }
 
 .story-header_0 {
@@ -3498,9 +3764,54 @@ p.section-6-copy {
   font-size: 9px;
 }
 
+.dropdown-menu {
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-width: 180px;
+  margin-top: -2%;
+  border: 1px solid #3d3d3d;
+}
 
+.dropdown-link:hover {
+  font-weight: bold;
+}
+
+/* .subnav-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;  Moves it to the right of the parent 
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+} */
 
 .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+}
+
+.subnav-menu {
+  position: absolute;
+  top: 0;
+  right: 100%; /* Submenu positioned to the left */
+  background-color: white;
+  width: 160px;
+  border: 1px solid #3d3d3d;
+}
+
+.subnav:hover .subnav-menu {
+  display: block;
+}
+
+
+
+/* .dropdown-menu {
   display: block;
   position: absolute;
   top: 100%;
@@ -3511,19 +3822,29 @@ p.section-6-copy {
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 0;
-}
+} */
 
 .dropdown-link {
   display: block;
-  padding: 10px 15px;
+  padding: 6px 10px;
   color: #333;
   text-decoration: none;
+  font-size: 15px;
+  /* background-color: #bfbfff; */
 }
 
 .dropdown-link:hover {
   background-color: #f4f4f4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.article-link {
+  color: black;
+  text-decoration: unset;
+}
 
 .story-header_0 h2 {
   font-size: 32px;
@@ -4075,7 +4396,6 @@ p.section-6-copy {
 .slider-controls {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
 }
 
 .family-title {
