@@ -37,6 +37,9 @@ function Footer() {
         <Link className='link_nav' to="/about">
         <li>About</li>
         </Link>
+        <Link className='link_nav' to="/events">
+        <li>Events</li>
+        </Link>
         <Link className='link_nav' to="/blog">
         <li>Blog</li>
         </Link>

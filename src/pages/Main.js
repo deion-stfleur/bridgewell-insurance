@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import MainImg from '../assets/main.jpg'
 import MattImg from '../assets/Matt.png'
 import { CiMedicalCase } from "react-icons/ci";
@@ -21,7 +21,6 @@ function Main() {
     const [currentSlider, setCurrentSlider] = useState(0);
 
     const [isVisible, setVisible] = React.useState(false);
-    const [isVisible2, setVisible2] = React.useState(false);
     const domRef = React.useRef();
   
     React.useEffect(() => {
@@ -213,6 +212,27 @@ const prevTestimonial = () => {
     const prevSlide = () => {
         setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
     };
+
+    const [multiplier, setMultiplier] = useState(25);
+
+
+    useEffect(() => {
+        const updateMultiplier = () => {
+          const width = window.innerWidth;
+          if (width >= 1600) {
+            setMultiplier(50); // Change this value as needed
+          } else if (width <= 768) {
+            setMultiplier(110); // Change this value as needed
+          } else {
+            setMultiplier(25);
+          }
+        };
+    
+        updateMultiplier(); // Set initial value
+        window.addEventListener("resize", updateMultiplier);
+    
+        return () => window.removeEventListener("resize", updateMultiplier);
+      }, []);
 
 
     return (
@@ -542,7 +562,7 @@ const prevTestimonial = () => {
 
       <div className="testimonials-slider">
         <div className="testimonials-track" style={{
-          transform: `translateX(-${currentSlider * 25}%)`,
+          transform: `translateX(-${currentSlider *  multiplier}%)`,
         }}>
           {testimonialser.map((testimonial, index) => (
             <div key={index} className="testimonial-card">

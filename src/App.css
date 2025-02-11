@@ -555,18 +555,36 @@ p.ct-p {
 
 
 .contact-img-left {
-  width: 52%;
-  margin-right: 30px;
+  width: 50%;
 }
 
+
 .contact-img-right {
-  width: 38%;
+  width: 50%;
+} 
+
+.bottom-contact-btn-hover:hover {
+  /* text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #3457f5; */
 }
+ 
+
+
+@media (min-width: 768px) {
+  #contact-fix {
+    margin-right: 30px;;
+  }
+}
+
 
 .bottom-contact-h1 {
   font-size: 45px;
     line-height: 50px;
     font-weight: 500;
+    color: black;
+    width: 70%;
 }
 
 .contact-img {
@@ -3371,6 +3389,30 @@ opacity: .9;
       width: 90%;
 }
 
+
+@media (min-width: 1700px) {
+  .navbar-container {
+    position: absolute;
+    z-index: 1;
+    top: -2%;
+    width: 100%;
+}
+}
+
+.fbook {
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+.fbook-p:hover {
+  color: #3b5998;
+  /* font-weight: bold; */
+}
+
+.fbook-container:hover .fbook-p {
+  color: #3b5998;
+}
+
 .feature-card {
   display: flex;
   flex-direction: column;
@@ -3397,6 +3439,10 @@ opacity: .9;
   font-size: 1.1rem;
   color: black;
   line-height: 1.5;
+}
+
+.contact-link {
+  text-decoration: none;
 }
 
 
@@ -3433,6 +3479,10 @@ opacity: .9;
 @media (max-width: 768px) {
   .about-content_0 {
       padding: 1rem;
+  }
+
+  .footer-title_01 {
+    text-decoration: unset;
   }
 
   .title_0 {
