@@ -3072,8 +3072,9 @@ p.section-5-email-btn-text {
   display: grid;
       grid-template-columns: 54% 1fr;
       gap: 2rem;
-      margin: 0 auto;
-      padding: 2rem;
+      width: 90%;
+      margin: auto;
+      margin-top: 40px;
 }
 
 .left-content_0 {
@@ -3089,8 +3090,8 @@ p.section-5-email-btn-text {
   line-height: 64px;
   margin-top: unset;
   margin-bottom: unset;
-  width: 70%;
-  color: black;
+  /* color: black; */
+  color: #2a45b4;
 }
 
 #ed-fix {
@@ -3134,7 +3135,8 @@ opacity: .9;
 .description_0 {
   font-size: 22px;
   line-height: 30px;
-  color: #4A4A4A;
+  /* color: #4A4A4A; */
+  color: black;
   margin-top: 5px;
   margin-bottom: unset;
   max-width: 570px;
@@ -3356,7 +3358,7 @@ opacity: .9;
   font-size: 3.5rem;
   line-height: 1.1;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #142467;
   margin-bottom: 4rem;
   max-width: 600px;
 }
@@ -3393,7 +3395,7 @@ opacity: .9;
 
 .feature-card p {
   font-size: 1.1rem;
-  color: #666;
+  color: black;
   line-height: 1.5;
 }
 
@@ -3528,6 +3530,12 @@ opacity: .9;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 2px;
+  color: black;
+}
+
+.ceo-role {
+  color: black;
+  margin-top: 4px;
 }
 
 img.matt-img-about {
@@ -3890,17 +3898,21 @@ p.section-6-copy {
 
 .dropdown-menu {
   position: absolute;
-  /* background: white; */
-  background: #9db1ff;
+  background: white;
+  /* background: #9db1ff; */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  /* border-radius: 5px; */
   min-width: 180px;
   margin-top: -2%;
   border: 1px solid #3d3d3d;
 }
 
 .dropdown-link:hover {
-  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #5174ff;
+
 }
 
 /* .subnav-menu {
@@ -3926,10 +3938,9 @@ p.section-6-copy {
   position: absolute;
   top: 100%;
   left: 0;
-  /* background-color: white; */
-  background-color: #9db1ff;
-  padding: 14px;
-  
+  background-color: white;
+  /* background-color: #9db1ff; */
+  padding: 4px;
 }
 
 .fade-in-section {
@@ -3954,12 +3965,13 @@ p.section-6-copy {
 
 .subnav-menu {
   position: absolute;
-  top: 2%;
+  top: 8%;
   right: 100%; /* Submenu positioned to the left */
-  background-color: #9db1ff;
-  width: 160px;
+  /* background-color: #9db1ff; */
+  background-color: white;
+  width: 180px;
   border: 1px solid #3d3d3d;
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 
 .subnav:hover .subnav-menu {
@@ -3988,13 +4000,10 @@ p.section-6-copy {
   text-decoration: none;
   font-size: 15px;
   /* background-color: #bfbfff; */
-  text-decoration: dashed;
+
 }
 
-.dropdown-link:hover {
-  /* background-color: #f4f4f4; */
-  color: white;
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -4565,6 +4574,7 @@ html {
   text-decoration-thickness: 1px;
   text-decoration-color: black;
   font-weight: bold;
+  color: black;
 }
 
 .nav-button {

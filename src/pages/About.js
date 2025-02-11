@@ -1,4 +1,4 @@
-import React, { useState, useEffect, use} from 'react';
+import React, { useState, useEffect} from 'react';
 import Banner from '../assets/stock1.jpg'
 import Family from '../assets/family.png'
 import MattImg from '../assets/Matt.png'
@@ -14,6 +14,23 @@ import Footer from '../components/Footer';
 
 
 function About() {
+
+    const [isVisible, setVisible] = React.useState(false);
+    const domRef = React.useRef();
+  
+    React.useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          console.log(`entry`, entry, `is = ${entry.isIntersecting}`);
+          setVisible(entry.isIntersecting);
+        });
+      });
+  
+      const { current } = domRef;
+      observer.observe(current);
+  
+      return () => observer.unobserve(current);
+    }, []);
 
     const services = [
         {
@@ -164,7 +181,7 @@ function About() {
 
         </div>
 
-        <div className="about-content_0">
+        <div className="about-content_0 fadeIn animate">
 
 
             <div className="left-content_0">
@@ -282,7 +299,8 @@ function About() {
             </div>
         </div> */}
 
-<section className="features-section">
+<section className={`features-section fade-in-section ${isVisible ? "is-visible" : ""}`}
+      ref={domRef}>
 
 <div className='inner-features-section'>
   <div className="features-heading">
@@ -291,7 +309,7 @@ function About() {
                     alt="People working with plants" 
                     className="image-left_0"
                 />
-    <h2>What Sets Us Apart</h2>
+    <h2>What Sets Us Apart!</h2>
   </div>
 
   <div className="features-grid">
@@ -359,7 +377,7 @@ function About() {
                    
                    <div className='matt-name'>
                     <p className='ceo-title'>Matthew Matos</p>
-                    <p>CEO & Founder</p>
+                    <p className='ceo-role'>CEO & Founder</p>
                    </div>
                 </div>
             
