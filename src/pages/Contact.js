@@ -127,7 +127,7 @@ function Contact() {
                </div>
 
                <div className='fbook-container'  style={{display: 'flex', alignItems: 'center', marginTop: '20px'}}>
-               <Link target='_blank' to="/">
+               <Link target='_blank' to="/https://www.instagram.com/bridgewell_insuranceagency?igsh=MTM1YzZocTJpY3JhcA==">
                 <FaInstagramSquare style={{color: '#E1306C', fontSize: '70px'}} />
                </Link>
                <Link className='fbook'  to="/" target='_blank'>
