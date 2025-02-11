@@ -5,6 +5,8 @@ import { FaFax } from "react-icons/fa";
 import { FaFacebook, FaSquarePhone } from "react-icons/fa6";
 import MattImg from '../assets/Matt.png'
 import { Link } from 'react-router-dom';
+import { FaInstagramSquare } from "react-icons/fa";
+
 
 
 function Contact() {
@@ -120,6 +122,15 @@ function Contact() {
                 <FaFacebook style={{color: '#3b5998', fontSize: '70px'}} />
                </Link>
                <Link className='fbook'  to="https://www.facebook.com/profile.php?id=61573094572375&mibextid=wwXIfr&rdid=xi8ldIUxYuiLqB5V&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1648BsGHU6%2F%3Fmibextid%3DwwXIfr#" target='_blank'>
+                <p className='fbook-p'>Bridgewell Insurance Agency LLC.</p> 
+               </Link>
+               </div>
+
+               <div className='fbook-container'  style={{display: 'flex', alignItems: 'center', marginTop: '20px'}}>
+               <Link target='_blank' to="/">
+                <FaInstagramSquare style={{color: '#E1306C', fontSize: '70px'}} />
+               </Link>
+               <Link className='fbook'  to="/" target='_blank'>
                 <p className='fbook-p'>Bridgewell Insurance Agency LLC.</p> 
                </Link>
                </div>
