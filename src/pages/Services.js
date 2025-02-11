@@ -22,14 +22,14 @@ function Services() {
             image: "https://images.pexels.com/photos/6414618/pexels-photo-6414618.jpeg?auto=compress&cs=tinysrgb&w=800",
              url: "/services#medicaid-assistance"
         },
-        {   id: "3",
-            category: "Horticulture",
-            date: "Massachusetts Medicaid Frequently Asked.",
-            title: "In-Home Services Assistance",
-            copy: "We help connect you with trusted providers for essential in-home services, such as adult foster care programs and Adult Day Health programs. Please note while we don't directly approve these services, our role is to refer you to reputable partners who can meet your needs.",
-            image: "https://images.pexels.com/photos/7551645/pexels-photo-7551645.jpeg?auto=compress&cs=tinysrgb&w=800",
-            url: "/services#in-home-assitance"
-        },
+        // {   id: "3",
+        //     category: "Horticulture",
+        //     date: "Massachusetts Medicaid Frequently Asked.",
+        //     title: "In-Home Services Assistance",
+        //     copy: "We help connect you with trusted providers for essential in-home services, such as adult foster care programs and Adult Day Health programs. Please note while we don't directly approve these services, our role is to refer you to reputable partners who can meet your needs.",
+        //     image: "https://images.pexels.com/photos/7551645/pexels-photo-7551645.jpeg?auto=compress&cs=tinysrgb&w=800",
+        //     url: "/services#in-home-assitance"
+        // },
 
     ];
 
@@ -166,7 +166,8 @@ function Services() {
                 <div className='medical-container_0122'>
                 <h1 className='medical-h11'>Medicaid Assistance</h1>
                 </div>
-            </div>        <div className="story-container_0">
+            </div>       
+        <div id="medicaid-assistance-mob-fix" className="story-container_0">
          
 
             <div className="story-content_0">
@@ -217,13 +218,13 @@ function Services() {
         </div>
 
 
-        <div id="in-home-assitance" style={{backgroundColor: '#FAF9F6'}}>
+        {/* <div id="in-home-assitance" style={{backgroundColor: '#FAF9F6'}}>
                 <div className='medical-container_012'>
                 <h1 className='medical-h1'>In-Home Services Assistance</h1>
                 </div>
-            </div>
+            </div> */}
 
-        <div className="story-container_0">
+        {/* <div className="story-container_0">
             <div className="story-image_0">
                 <img 
                     src="https://images.pexels.com/photos/7799552/pexels-photo-7799552.jpeg?auto=compress&cs=tinysrgb&w=1200" 
@@ -245,7 +246,7 @@ function Services() {
             
 
                 <section className="about-service_0">
-                        {/* <h2>About</h2> */}
+                        <h2>About</h2>
                         <p>At Bridgewell, we recognize that health and well-being extend beyond just insurance. We help connect you with trusted providers for essential in-home services, such as adult foster care programs and Adult Day Health programs. Please note while we don’t directly approve these services, our role is to refer you to reputable partners who can meet your needs.</p>
                         
     
@@ -271,7 +272,7 @@ function Services() {
        
                
             </div>
-        </div>
+        </div> */}
 
 
 

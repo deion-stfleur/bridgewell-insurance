@@ -1,6 +1,9 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
+import { RiCustomerService2Fill } from 'react-icons/ri'
+import { FaHome } from 'react-icons/fa'
+import { MdFamilyRestroom } from 'react-icons/md'
 
 function Why() {
   return (
@@ -39,9 +42,7 @@ function Why() {
 
                 <div className="value-card_0">
                     <div className="icon-container_0">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 2L4 10V22H20V10L12 2Z" fill="currentColor"/>
-                        </svg>
+                    <RiCustomerService2Fill />
                     </div>
                     <h3>Personalized Service</h3>
                     <p>Our team takes the time to understand your unique needs and provide the best health insurance options available.</p>
@@ -49,9 +50,7 @@ function Why() {
 
                 <div className="value-card_0">
                     <div className="icon-container_0">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
-                        </svg>
+                    <FaHome />
                     </div>
                     <h3>In-Home Services Referrals</h3>
                     <p>We also assist with connecting you to trusted partners for in-home care services, such as adult foster care and adult day care.</p>
@@ -59,9 +58,7 @@ function Why() {
 
                 <div className="value-card_0">
                     <div className="icon-container_0">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M1 21H23L12 2L1 21Z" fill="currentColor"/>
-                        </svg>
+                    <MdFamilyRestroom />
                     </div>
                     <h3>Dedicated to Your Future</h3>
                     <p>Health insurance is about more than just today. It’s about securing your future. We help bridge the gap to a healthier tomorrow.</p>

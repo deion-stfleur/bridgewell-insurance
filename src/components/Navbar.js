@@ -125,12 +125,12 @@ function Navbar() {
                                                 >
                                                     Medicaid Assistance
                                                 </a>
-                                                <a
+                                                {/* <a
                                                     class="dropdown-link"
                                                     href="/services#in-home-assitance"
                                                 >
                                                     In-Home Services Assistance
-                                                </a>
+                                                </a> */}
                                             </div>
                                         )}
                                     </div>

@@ -8,6 +8,8 @@ import { MdFamilyRestroom } from "react-icons/md";
 import {Link} from 'react-router-dom'
 import "../index.css"
 import Footer from '../components/Footer';
+import { MdOutlineStar } from "react-icons/md";
+
 
 
 
@@ -109,25 +111,19 @@ function Main() {
     const services = [
         {
             number: "01",
-            url: "/services/Medicare-Assistance",
+            url: "/services#medicare-assistance",
             title: "Medicare Assistance",
             description: "We guide you through the various parts of Medicare, helping you choose between Original Medicare, Medicare Advantage, Part D prescription drug plans, and supplemental coverage based on your specific health needs and budget.",
             image: "https://images.pexels.com/photos/4226769/pexels-photo-4226769.jpeg?auto=compress&cs=tinysrgb&w=1200"
         },
         {
             number: "02",
-            url: "/services/Medicaid-Assistance",
+            url: "/services#medicaid-assistance",
             title: "Medicaid Assistance",
             description: "We understand that applying for Medicaid or renewing your coverage can be confusing and time-consuming. Our team is here to guide you through every step of the process, ensuring that you have the support you need to complete your application and maintain continuous coverage.",
             image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
         },
-        {
-            number: "03",
-            url: "/services/In-Home-Assitance",
-            title: "In-Home Services Assistance",
-            description: "We help connect you with trusted providers for essential in-home services, such as adult foster care programs and Adult Day Health programs. Please note while we don't directly approve these services, our role is to refer you to reputable partners who can meet your needs.",
-            image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-        }
+
     ];
 
 
@@ -366,9 +362,9 @@ const prevTestimonial = () => {
                         <h2>{service.title}</h2>
                         <p>{service.description}</p>
 
-                        <Link to={service.url} className='link'>
+                        <a href={service.url} class='link'>
                         <button className="learn-more">LEARN MORE</button>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             ))}
@@ -560,6 +556,15 @@ const prevTestimonial = () => {
                   <p className="author">{testimonial.author}</p>
                   {/* <p className="location">{testimonial.location}</p> */}
                 </div>
+
+                <div style={{marginBottom: 40}}>
+
+                <MdOutlineStar  style={{color:'gold', fontSize: 25}} />
+                <MdOutlineStar style={{color:'gold', fontSize: 25}} />
+                <MdOutlineStar style={{color:'gold', fontSize: 25}} />
+                <MdOutlineStar style={{color:'gold', fontSize: 25}} />
+                <MdOutlineStar style={{color:'gold', fontSize: 25}} />
+            </div>
             </div> 
               </div>
             </div>

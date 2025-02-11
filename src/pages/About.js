@@ -4,6 +4,10 @@ import Family from '../assets/family.png'
 import MattImg from '../assets/Matt.png'
 import "../index.css"
 import {Link} from 'react-router-dom'
+import { MdOutlineSupportAgent } from "react-icons/md";
+import { CiMoneyCheck1 } from "react-icons/ci";
+import { FaHandshakeAngle } from "react-icons/fa6";
+
 import Footer from '../components/Footer';
 
 
@@ -293,7 +297,7 @@ function About() {
   <div className="features-grid">
     <div className="feature-card">
       <div className="feature-icon" style={{backgroundColor: '#E3F2FF'}}>
-        <i className="info-icon">i</i>
+      <MdOutlineSupportAgent />
       </div>
       <h3>Our Visions</h3>
       <p>We understand the importance of support beyond just health insurance, which is why we also connect you with trusted partners offering in-home services like adult foster care and adult day care.</p>
@@ -301,7 +305,7 @@ function About() {
 
     <div className="feature-card">
       <div className="feature-icon" style={{backgroundColor: '#FFF9C4'}}>
-        <i className="hourglass-icon">⌛</i>
+      <CiMoneyCheck1 />
       </div>
       <h3>Our Mission</h3>
       <p>Are you losing patients or revenue due to them losing/not yet having Medicaid coverage? We can help your current or prospective patients, keep or gain coverage.</p>
@@ -309,7 +313,7 @@ function About() {
 
     <div className="feature-card">
       <div className="feature-icon" style={{backgroundColor: '#FFE7EB'}}>
-        <i className="percentage-icon">%</i>
+      <FaHandshakeAngle />
       </div>
       <h3>Plan & Goal</h3>
       <p>We’re a trusted partner, dedicated to walking you through the complex world of health insurance and helping you secure the care and services you need for a better tomorrow.</p>
