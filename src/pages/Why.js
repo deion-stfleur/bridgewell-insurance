@@ -48,13 +48,13 @@ function Why() {
                     <p>Our team takes the time to understand your unique needs and provide the best health insurance options available.</p>
                 </div>
 
-                <div className="value-card_0">
+                {/* <div className="value-card_0">
                     <div className="icon-container_0">
                     <FaHome />
                     </div>
                     <h3>In-Home Services Referrals</h3>
                     <p>We also assist with connecting you to trusted partners for in-home care services, such as adult foster care and adult day care.</p>
-                </div>
+                </div> */}
 
                 <div className="value-card_0">
                     <div className="icon-container_0">

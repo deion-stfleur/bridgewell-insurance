@@ -416,13 +416,13 @@ const prevTestimonial = () => {
                     <p>Our team takes the time to understand your unique needs and provide <Link className='link-blue' to="/why-choose-us"><strong>Read More...</strong></Link></p>
                 </div>
 
-                <div className="value-card_0">
+                {/* <div className="value-card_0">
                     <div className="icon-container_0">
                     <FaHome />
                     </div>
                     <h3>In-Home Services Referrals</h3>
                      <p>We also assist with connecting you to trusted partners for in-home care services <Link className='link-blue' to="/why-choose-us"><strong>Read More...</strong></Link></p>
-                </div>
+                </div> */}
 
                 <div className="value-card_0">
                     <div className="icon-container_0">
