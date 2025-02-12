@@ -181,19 +181,24 @@ function About() {
 
         </div>
 
-        <div className="about-content_0 fadeIn animate">
+        <div id="abt-fix" className="about-content_0 fadeIn animate">
 
 
-            <div className="left-content_0">
+            <div className="left-content_0 lco">
                 <div className="text-container_0">
                 <p className="tc_01">Standing Guard Over What Matters Most—Your Health, Your Future.</p>
                     <p className="description_0">
-                    Our team is focused on providing personalized service and helping you explore the best Medicare Advantage, Medicare Supplement, and prescription drug plan options available. With a deep understanding of senior healthcare needs, we work closely with you to ensure that you have the coverage that suits your lifestyle and health requirements.
-                    </p>
+                    At Bridgewell Insurance Agency, we are dedicated to helping seniors in Massachusetts navigate the complexities of health insurance with confidence. As a locally owned and operated business with over 10 years of experience, we specialize in Medicare solutions tailored to meet the unique needs of our community.                    </p>
 
                     <p className="description_0">
-                    Our team is focused on providing personalized service and helping you explore the best Medicare Advantage, Medicare Supplement, and prescription drug plan options available. With a deep understanding of senior healthcare needs, we work closely with you to ensure that you have the coverage that suits your lifestyle and health requirements.
-                    </p>
+                    Our team is focused on providing personalized service and helping you explore the best Medicare Advantage, Medicare Supplement, and prescription drug plan options available. With a deep understanding of senior healthcare needs, we work closely with you to ensure that you have the coverage that suits your lifestyle and health requirements.                   
+                     </p>
+
+                     <p className="description_0">
+                     What sets us apart is our commitment to building long-term relationships. We take the time to listen, educate, and guide you through your options so you can make informed decisions. Our goal is to provide you with peace of mind, knowing that you have the right health insurance coverage to protect your future.                     
+                     </p>
+                     <p className="description_0">
+                     At Bridgewell Insurance Agency, we're not just here to sell insurance—we're your trusted partners in navigating Medicare and securing your health and well-being for the years ahead.                     </p>
 
                     <p className="description_0">Our team is focused on providing personalized service and helping you explore the best Medicare Advantage,</p>
                     <a href="/services" className="explore-link_0">
@@ -206,8 +211,8 @@ function About() {
             <div className="right-content_0">
                 <img 
                     // src="https://images.pexels.com/photos/7477702/pexels-photo-7477702.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                    alt="Gardeners working with trees" 
-                    className="large-image_0"
+                    alt="Matthew Matos Ceo of Bridgewell Insurance" 
+                    className="large-image_0 lgo-fix"
                     src="https://iili.io/2mAcTlV.jpg"
                 />
             </div>

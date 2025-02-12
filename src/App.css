@@ -201,6 +201,23 @@
     padding: 3rem 1rem;
   }
 
+  .lco {
+    border-radius: unset !important;
+  }
+
+  #abt-fix {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+  .lgo-fix {
+    height: unset !important;
+  }
+
+  .right-content_0 {
+    display: block !important;
+  }
+
   .testimonial-card {
     min-width: 100%; /* Full width on mobile */
     grid-template-columns: 1fr;
@@ -1326,6 +1343,14 @@ li {
       grid-template-columns: 1fr;
   }
 
+  .rco099 {
+    display: none !important;
+  }
+
+  .large-image_0199 {
+    display: none;
+  }
+
   .about-us_01 {
     display: none;
   }
@@ -1927,6 +1952,7 @@ p {
     width: unset !important;
     font-size: 34px !important;
     line-height: 42px !important;
+    margin-top: 20px !important;
   }
 
   .tc_0199 {
@@ -5109,6 +5135,10 @@ p.section-2-h1 {
 
 .mobile-menu.open {
   transform: translateY(0);
+}
+
+.lgo-fix {
+  height: 796px;
 }
 
 .mobile-menu .link-title {

@@ -40,7 +40,7 @@ function Events() {
  
 </div>
 
-<div className="right-content_0">
+<div className="right-content_0 rco099">
     <img 
         // src="https://images.pexels.com/photos/7477702/pexels-photo-7477702.jpeg?auto=compress&cs=tinysrgb&w=800" 
         alt="Family running in field" 
