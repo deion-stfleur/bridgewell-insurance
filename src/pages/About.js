@@ -208,7 +208,7 @@ function About() {
                     // src="https://images.pexels.com/photos/7477702/pexels-photo-7477702.jpeg?auto=compress&cs=tinysrgb&w=800" 
                     alt="Gardeners working with trees" 
                     className="large-image_0"
-                    src="https://images.pexels.com/photos/6787972/pexels-photo-6787972.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    src="https://iili.io/2mAcTlV.jpg"
                 />
             </div>
            

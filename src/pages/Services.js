@@ -211,7 +211,7 @@ function Services() {
 
             <div id="fa-fix" className="story-image_0">
                 <img 
-                    src="https://images.pexels.com/photos/6972787/pexels-photo-6972787.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                    src="https://images.pexels.com/photos/8439746/pexels-photo-8439746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                     alt="Family sitting at table" 
                 />
             </div>

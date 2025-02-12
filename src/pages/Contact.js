@@ -99,7 +99,7 @@ function Contact() {
             </div>
 
             <div className='contact-img-right'>
-                <p className='bottom-contact-h1'>Have more Questions?</p>
+                <p className='bottom-contact-h1'>Frequently Asked Questions</p>
                 <p>Our team is ready to assist you. Reach out today and get the answers you need with confidence.</p>
                 
                 <Link className='link' to='/faq'>
@@ -126,14 +126,23 @@ function Contact() {
                </Link>
                </div>
 
-               <div className='fbook-container'  style={{display: 'flex', alignItems: 'center', marginTop: '20px'}}>
-               <Link target='_blank' to="/https://www.instagram.com/bridgewell_insuranceagency?igsh=MTM1YzZocTJpY3JhcA==">
+               <div className='fbook-container'  style={{display: 'flex', alignItems: 'center', marginTop: 30}}>
+               <Link target='_blank' to="https://www.instagram.com/bridgewell_insuranceagency?igsh=MTM1YzZocTJpY3JhcA==">
+               <FaInstagramSquare style={{color: '#E1306C', fontSize: '70px'}} />
+               </Link>
+               <Link className='fbook'  to="https://www.instagram.com/bridgewell_insuranceagency?igsh=MTM1YzZocTJpY3JhcA==" target='_blank'>
+                <p className='fbook-p'>Bridgewell Insurance Agency LLC.</p> 
+               </Link>
+               </div>
+
+               {/* <div className='fbook-container'  style={{display: 'flex', alignItems: 'center', marginTop: '20px'}}>
+               <Link target='_blank' to="https://www.instagram.com/bridgewell_insuranceagency?igsh=MTM1YzZocTJpY3JhcA==" className='fbook' >
                 <FaInstagramSquare style={{color: '#E1306C', fontSize: '70px'}} />
                </Link>
                <Link className='fbook'  to="/" target='_blank'>
                 <p className='fbook-p'>Bridgewell Insurance Agency LLC.</p> 
                </Link>
-               </div>
+               </div> */}
 
             </div>
 
