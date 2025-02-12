@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import { IoIosArrowDown } from 'react-icons/io';
+import { IoCloseOutline } from "react-icons/io5";
+
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -134,7 +136,7 @@ function Navbar() {
                                             </div>
                                         )}
                                     </div>
-                                    <Link to="/services" className="dropdown-link">
+                                    <Link to="/services#medicaid-assistance" className="dropdown-link">
                                         Medicaid Support
                                     </Link>
                                 </div>
@@ -170,17 +172,55 @@ function Navbar() {
 
             {/* Mobile Dropdown */}
             <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+            <img
+                            className="logo-mob"
+                            alt="Bridgewell Insurance Logo"
+                            src="https://iili.io/2iIvZBe.png"
+                        />
+                           <Link onClick={toggleMenu} className="link" to="/">
+                    <p className="link-title">Home</p>
+                </Link>
                 <Link onClick={toggleMenu} className="link" to="/about">
                     <p className="link-title">About Us</p>
                 </Link>
+
+                <ul>
+                    <Link to="/why-choose-us" className='link' onClick={toggleMenu}>
+                    <li className='mob-li'>Why Choose Us?</li>
+                    </Link>
+                    <Link to="/events" className='link' onClick={toggleMenu}>
+                    <li className='mob-li'>Events</li>
+                    </Link>
+                    <Link to="/faq" className='link' onClick={toggleMenu}>
+                    <li className='mob-li'>FAQ</li>
+                    </Link>
+                </ul>
+
+              
                 <Link onClick={toggleMenu} className="link" to="/services">
                     <p className="link-title">Services</p>
                 </Link>
+
+                <ul>
+                    <Link to="/services#medicare-assistance" className='link' onClick={toggleMenu}>
+                    <li className='mob-li'>Medicare Assistance</li>
+                    </Link>
+                    <Link to="/services#medicaid-assistance" className='link' onClick={toggleMenu}>
+                    <li className='mob-li'>Medicaid Assistance</li>
+                    </Link>
+                </ul>
                 <Link onClick={toggleMenu} to="/blog" className="link">
                     <p className="link-title">Blog</p>
                 </Link>
+
+            <a href="tel:9782306080" class="link">
+                <div className='ct-mob-btn-nav'>
+                    <p>Call Today!</p>
+                </div>
+            </a>
                 <div onClick={toggleMenu}>
-                    <p className="link-title">Close</p>
+                    {/* <p className="link-title">Close</p> */}
+                    <IoCloseOutline style={{color: 'white', textAlign: 'center', fontSize: 20, width: '90%'}} />
                 </div>
             </div>
         </div>

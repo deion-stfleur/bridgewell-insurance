@@ -15,6 +15,7 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Why from './pages/Why';
 import Events from './pages/Events';
+import Scroller from './components/Scroller';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/why-choose-us" element={<Why />} />
         <Route path="/events" element={<Events />} />
       </Routes>
+      <Scroller />
     </Router>
 
   );

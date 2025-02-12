@@ -396,7 +396,7 @@ const prevTestimonial = () => {
                 <p>Core values of integrity, innovation, and excellence shape every solution we deliver.</p>
             </div>
 
-            <div className="values-grid_0">
+            <div className="values-grid_0" id="grid-fix">
                 <div className="value-card_0">
                     <div className="icon-container_0">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -612,7 +612,7 @@ const prevTestimonial = () => {
 
 <div className="hero-section">
   <img
-    src="https://images.pexels.com/photos/8439679/pexels-photo-8439679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+    src="https://images.pexels.com/photos/6917033/pexels-photo-6917033.jpeg?auto=compress&cs=tinysrgb&w=1200" 
     alt="Team collaboration" 
     className="hero-image"
   />

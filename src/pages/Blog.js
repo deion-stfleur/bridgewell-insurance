@@ -48,7 +48,7 @@ function Blog() {
         </div>
         <div className="hero-section-ppp">
   <img
-    src="https://images.pexels.com/photos/8439679/pexels-photo-8439679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+    src="https://images.pexels.com/photos/965117/pexels-photo-965117.jpeg?auto=compress&cs=tinysrgb&w=1200" 
     alt="Team collaboration" 
     className="hero-image"
   />

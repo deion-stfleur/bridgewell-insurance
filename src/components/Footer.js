@@ -25,7 +25,7 @@ function Footer() {
         <a href="/services#medicare-assistance" class='links'>
         <li>Health Insurance</li>
         </a>
-        <a href="/services" class='links'>
+        <a href="/services#medicaid-assistance" class='links'>
         <li>Medicaid Support</li>
         </a>
       </ul>

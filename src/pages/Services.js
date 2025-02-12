@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
@@ -32,6 +32,18 @@ function Services() {
         // },
 
     ];
+
+
+    useEffect(() => {
+     if (window.location.href.includes("/services#medicare-assistance") || window.location.href.includes("/services#medicaid-assistance")) {
+        const element = document.getElementById("medicare-assistance");
+        const element2 = document.getElementById("medicaid-assistance");
+        if (element || element2) {
+          element.scrollIntoView({ behavior: "smooth" });
+          element2.scrollIntoView({ behavior: "smooth" });
+        }
+     }
+    }, [])
 
 
     const services = [

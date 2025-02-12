@@ -76,7 +76,7 @@ function Contact() {
             <div>
                 <MdEmail className='contact-icon' />
                 <p className='contact-p'>Email</p>
-                <p className='contact-copy'>infor@bridgewellinsuranceagency.com</p>
+                <p className='contact-copy'>info@bridgewellinsuranceagency.com</p>
             </div>
             </a>
 
@@ -114,7 +114,7 @@ function Contact() {
         <div className='bottom-contact-container'>
 
         <div className='contact-img-right'>
-                <p className='bottom-contact-h1'>We would love to connect with you on social media!</p>
+                <p className='bottom-contact-h1'>Follow us on social media!</p>
                
 
                <div className='fbook-container'  style={{display: 'flex', alignItems: 'center'}}>
