@@ -111,7 +111,7 @@ function Contact() {
         </div>
 
 
-        <div className='bottom-contact-container'>
+        <div className='bottom-contact-container bct-2'>
 
         <div className='contact-img-right'>
                 <p className='bottom-contact-h1'>Follow us on social media!</p>

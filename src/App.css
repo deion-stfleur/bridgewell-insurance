@@ -1402,9 +1402,19 @@ li {
     display: block;
   }
 
+  .bct-2 {
+    padding-top: unset
+  }
+
+  .bct-1 {
+
+  }
+
   .contact-card {
     height: unset;
     width: unset;
+    display: block;
+    margin-bottom: 16px;
   }
 
   .family-img {
@@ -5108,6 +5118,7 @@ p.section-2-h1 {
   text-align: left;
   font-weight: 500;
   margin-left: unset;
+  text-decoration: underline;
 }
 
 

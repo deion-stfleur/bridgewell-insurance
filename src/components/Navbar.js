@@ -202,7 +202,7 @@ function Navbar() {
                 </Link>
 
                 <ul>
-                    <Link to="/services#medicare-assistance" className='link' onClick={toggleMenu}>
+                    <Link to="/services" className='link' onClick={toggleMenu}>
                     <li className='mob-li'>Medicare Assistance</li>
                     </Link>
                     <Link to="/services#medicaid-assistance" className='link' onClick={toggleMenu}>
@@ -211,6 +211,10 @@ function Navbar() {
                 </ul>
                 <Link onClick={toggleMenu} to="/blog" className="link">
                     <p className="link-title">Blog</p>
+                </Link>
+
+                <Link onClick={toggleMenu} to="/contact" className="link">
+                    <p className="link-title">Contact</p>
                 </Link>
 
             <a href="tel:9782306080" class="link">
