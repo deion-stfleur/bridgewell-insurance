@@ -107,13 +107,13 @@ function Services() {
                             <h3 className="article-title_0">{article.title}</h3>
                             {/* <p className='article-copy'>{article.copy}</p> */}
 
-                            <Link to={article.url} className='link'>
+                            <a href={article.url} className='link'>
                             <div className="read-more_0">
                                 Read More
                                 <span className="arrow_0">→</span>
                             </div>
                             
-                            </Link>
+                            </a>
                         </article>
                         </a>  
                         </>
