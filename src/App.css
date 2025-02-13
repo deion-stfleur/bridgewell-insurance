@@ -211,11 +211,15 @@
   }
 
   .lgo-fix {
-    height: unset !important;
+    height: 100% !important;
   }
 
   .right-content_0 {
     display: block !important;
+  }
+
+  .family-p-01 {
+    margin-top: unset !important;
   }
 
   .testimonial-card {

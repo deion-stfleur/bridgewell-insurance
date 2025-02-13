@@ -186,7 +186,7 @@ function About() {
 
             <div className="left-content_0 lco">
                 <div className="text-container_0">
-                <p className="tc_01">Standing Guard Over What Matters Most—Your Health, Your Future.</p>
+                <p className="tc_01 family-p-01">Standing Guard Over What Matters Most—Your Health, Your Future.</p>
                     <p className="description_0">
                     At Bridgewell Insurance Agency, we are dedicated to helping seniors in Massachusetts navigate the complexities of health insurance with confidence. As a locally owned and operated business with over 10 years of experience, we specialize in Medicare solutions tailored to meet the unique needs of our community.                    </p>
 
