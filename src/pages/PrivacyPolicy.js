@@ -54,11 +54,8 @@ function PrivacyPolicy() {
   />
   <div className="hero-overlay"></div>
   <div className="hero-content">
-    <h1>Protecting what matters, empowering your future.</h1>
+    <h1>Securing what matters, empowering your tomorrow</h1>
 
-    <Link className='link' to="/contact">
-    <button>Read Below →</button>
-    </Link>
   </div>
 </div>
 
