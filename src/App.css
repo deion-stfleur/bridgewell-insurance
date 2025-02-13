@@ -1338,6 +1338,8 @@ li {
   text-align: center;
 }
 
+
+
 @media (max-width: 1024px) {
   .case-study-container {
       grid-template-columns: 1fr;
@@ -1376,6 +1378,10 @@ li {
 @media (max-width: 768px) {
   .case-study-content h1 {
       font-size: 2rem;
+  }
+
+  .rco099 {
+    height: unset !important;
   }
 
   .hero-section-pp {
