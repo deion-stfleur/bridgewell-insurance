@@ -322,7 +322,7 @@ function About() {
       <div className="feature-icon" style={{backgroundColor: '#E3F2FF'}}>
       <MdOutlineSupportAgent />
       </div>
-      <h3>Our Visions</h3>
+      <h3>Our Vision</h3>
       <p>We understand the importance of support beyond just health insurance, which is why we also connect you with trusted partners offering in-home services like adult foster care and adult day care.</p>
     </div>
 
