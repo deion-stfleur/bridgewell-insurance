@@ -185,6 +185,32 @@
   background: #f5f5f5;
 }
 
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .story-image_0 img {
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: unset !important;
+    width: 100% !important;
+}
+.story-image_0 {
+  border-radius: 9px !important;
+  overflow: hidden !important;
+  height: 100% !important;
+  position: relative !important;
+}
+}
+
+@media (min-width: 1600px) {
+  .story-image_0 img {
+    height: 700px !important;
+    object-position: unset !important;
+  }
+
+  .story-image_0 {
+    height: unset !important;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .testimonial-card {
@@ -200,6 +226,21 @@
   .testimonials {
     padding: 3rem 1rem;
   }
+  .pos-h1 {
+    color: white;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: unset;
+}
+.pos-h2 {
+  color: white;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 500;
+  margin-top: 6px;
+  margin-bottom: unset;
+}
 
   .lco {
     border-radius: unset !important;
@@ -4296,7 +4337,7 @@ html {
 
   .story-image_0 img {
     width: 100%;
-    height: 314px;
+    height: 366px;
     object-fit: cover;
     border-radius: 13px;
 }

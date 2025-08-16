@@ -1,7 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import Banner from '../assets/stock1.jpg'
 import Family from '../assets/family.png'
-import MattImg from '../assets/Matt.png'
+import MattImg from '../assets/matt-logo.jpg'
+import MattImg2 from '../assets/matt-about.jpg'
 import "../index.css"
 import {Link} from 'react-router-dom'
 import { MdOutlineSupportAgent } from "react-icons/md";
@@ -213,7 +214,7 @@ function About() {
                     // src="https://images.pexels.com/photos/7477702/pexels-photo-7477702.jpeg?auto=compress&cs=tinysrgb&w=800" 
                     alt="Matthew Matos Ceo of Bridgewell Insurance" 
                     className="large-image_0 lgo-fix"
-                    src="https://iili.io/2mAcTlV.jpg"
+                    src={MattImg2}
                 />
             </div>
            

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import MainImg from '../assets/main.jpg'
-import MattImg from '../assets/Matt.png'
+import MattImg from '../assets/new-main-home.jpg'
 import { CiMedicalCase } from "react-icons/ci";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { FaHome } from "react-icons/fa";
