@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import Banner from '../assets/stock1.jpg'
 import Family from '../assets/family.png'
-import MattImg from '../assets/matt-logo.jpg'
-import MattImg2 from '../assets/matt-about.jpg'
+import MattImg from '../assets/compressed-matt-2.jpg'
+import MattImg2 from '../assets/new-matt-4.jpg'
 import "../index.css"
 import {Link} from 'react-router-dom'
 import { MdOutlineSupportAgent } from "react-icons/md";
